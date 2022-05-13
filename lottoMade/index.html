@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lotto Made Main</title>
+    <link href="./_css/common.css" rel="styleSheet" type="text/css" />
+    <link href="./_css/style.css" rel="styleSheet" type="text/css" />
+    <link href="./_css/swiper.css" rel="styleSheet" type="text/css" />
+    <script src="./_js/jquery-1.8.1.min.js"></script>
+    <script src="./_js/swiper.min.js"></script>
+    <script defer src="./_js/common.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <div class="inner">
+            <div class="logo"><a href="./index.html"><img src="_img/mainLogo.png" alt="로또메이드"></a></div>
+            <div class="gnb">
+                <ul>
+                    <li><a href="./system.html">메이드 분석시스템</a></li>
+                    <li><a href="./membership.html">메이드 멤버십</a></li>
+                    <li><a href="#">분석자료</a></li>
+                    <li><a href="#">나의조합</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="utill">
+                <div class="btn btn--red"><a href="#">로그인</a></div>
+                <div class="btn btn--black"> <a href="#">회원가입</a></div>
+            </div>
+        </div>
+         <!-- LNB -->
+        <div class="lnb">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>메이드 분석시스템</dt>
+                            <dd><a href="./system.html">분석시스템 소개</a></dd>
+                            <dd><a href="./system.html">분석시스템 알고리즘 및 이론</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>메이드 멤버십</dt>
+                            <dd><a href="./membership.html">메이드</a></dd>
+                            <dd><a href="./membership.html">메이드 B</a></dd>
+                            <dd><a href="./membership.html">메이드 플러스</a></dd>
+                            <dd><a href="./membership.html">메이드 트러플</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>분석자료</dt>
+                            <dd><a href="#">당첨조합패턴</a></dd>
+                            <dd><a href="#">당첨번호구간</a></dd>
+                            <dd><a href="#">번호배출순위</a></dd>
+                            <dd><a href="#">홀/짝 통계</a></dd>
+                            <dd><a href="#">연번 통계</a></dd>
+                            <dd><a href="#">고/저 통계</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>나의조합</dt>
+                            <dd><a href="#">조합확인</a></dd>
+                            <dd><a href="#">결제내역</a></dd>
+                            <dd><a href="#">문자전송내역</a></dd>
+                            <dd><a href="#">조합수 수정</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>고객센터</dt>
+                            <dd><a href="#">공지사항</a></dd>
+                            <dd><a href="#">자주묻는질문</a></dd>
+                            <dd><a href="#">1:1문의</a></dd>
+                            <dd><a href="#">스팸처리</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="contents">
+        <!-- MAIN BENNER -->
+        <section class="main-benner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="benner benner01 swiper-slide">
+                        <div class="inner">
+                            <h2>고객님의 소중한 시간<br /><span>로또메이드</span>가 도와드리겠습니다.</h2>
+                            <p>매주 소중하고 기대되는 시간으로 만들어드리겠습니다.</p>
+                            <div class="btn btn--white"><a href="#">무료 번호 받기</a></div>
+                        </div>
+                    </div>
+                    <div class="benner benner02 swiper-slide">
+                        <div class="inner">
+                            <h2>분명 시작은 두려울 수 있으나<br /><span>신뢰와 당첨</span>은 경험을 해야 느낄 수 있습니다.</h2>
+                            <p>로또메이드가 신뢰와 당첨을 드리겠습니다.</p>
+                            <div class="btn btn--white"><a href="#">무료 번호 받기</a></div>
+                        </div>
+                    </div>
+                    <div class="benner benner03 swiper-slide">
+                        <div class="inner">
+                            <h2><span>80%</span>는 노력으로 만들수 있고<br /><span>10%</span>는 하늘이 돕고 <span>10%</span>는 사람들이 돕는다.</h2>
+                            <p>로또메이드가 80% 이상의 노력으로 확실한 성과 보여드리겠습니다.</p>
+                            <div class="btn btn--white"><a href="#">무료 번호 받기</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- MAIN CONTENTS -->
+        <div class="main-contents">
+            <div class="inner">
+                <!-- GRADE -->
+                <section class="grade-area">
+                    <div class="title">
+                        <h2>분석기 성적표</h2>
+                        <select>
+                            <option value="999회">999회</option>
+                        </select>
+                    </div>
+                    <div class="table-wrap grade-table">
+                        <table class="table-style--01">
+                            <colgroup>
+                                <col width="20%" />
+                                <col width="20%" />
+                                <col width="*" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>순위</th>
+                                    <th>당첨자</th>
+                                    <th>총 당첨금액</th>
+                                </tr>
+                                <tr>
+                                    <td><div class="rank rank01">1등</div></td>
+                                    <td>000명</td>
+                                    <td>00억 0000만 0000원</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="rank rank02">2등</div></td>
+                                    <td>000명</td>
+                                    <td>00억 0000만 0000원</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="rank rank03">3등</div></td>
+                                    <td>000명</td>
+                                    <td>00억 0000만 0000원</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="rank rank04">4등</div></td>
+                                    <td>000명</td>
+                                    <td>00억 0000만 0000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- BALL NUMBER -->
+                <section class="ball-number-area">
+                    <div class="title">
+                        <div class="number-info">
+                            <p>2021.00.00 추첨</p>
+                            <h2><span>999</span>회 당첨번호</h2>
+                            <div class="number-arrow-left"><span class="material-icons">chevron_left</span></div>
+                            <div class="number-arrow-right"><span class="material-icons">navigate_next</span></div>
+                        </div>
+                        <div class="ball-number">
+                            <img src="./_img/ball-img.png" alt="로또공 이미지">
+                        </div>
+                    </div>
+                    <div class="table-wrap ball-table">
+                        <table class="table-style--01">
+                            <colgroup>
+                                <col width="8%" />
+                                <col width="23%" />
+                                <col width="23%" />
+                                <col width="15%" />
+                                <col width="*" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>순위</th>
+                                    <th>총 당첨금액</th>
+                                    <th>1인당 당첨금액</th>
+                                    <th>당첨자 수</th>
+                                    <th>당첨기준</th>
+                                </tr>
+                                <tr>
+                                    <td>1등</td>
+                                    <td>000억0000만0000원</td>
+                                    <td>00억0000만0000원</td>
+                                    <td>0,000,000명</td>
+                                    <td>당첨번호 6개 숫자일치</td>
+                                </tr>
+                                <tr>
+                                    <td>2등</td>
+                                    <td>000억0000만0000원</td>
+                                    <td>00억0000만0000원</td>
+                                    <td>0,000,000명</td>
+                                    <td>당첨번호 5개 + 보너스 숫자일치</td>
+                                </tr>
+                                <tr>
+                                    <td>3등</td>
+                                    <td>000억0000만0000원</td>
+                                    <td>00억0000만0000원</td>
+                                    <td>0,000,000명</td>
+                                    <td>당첨번호 5개 숫자일치</td>
+                                </tr>
+                                <tr>
+                                    <td>4등</td>
+                                    <td>000억0000만0000원</td>
+                                    <td>00억0000만0000원</td>
+                                    <td>0,000,000명</td>
+                                    <td>당첨번호 4개 숫자일치</td>
+                                </tr>
+                                <tr>
+                                    <td>5등</td>
+                                    <td>000억0000만0000원</td>
+                                    <td>00억0000만0000원</td>
+                                    <td>0,000,000명</td>
+                                    <td>당첨번호 3개 숫자일치</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- LOGIN -->
+                <section class="login-box">
+                    <p><span class="material-icons">perm_identity</span>아이디</p>
+                    <input type="text" placeholder="아이디를 입력하세요." />
+                    <p><span class="material-icons">lock_outline</span>비밀번호</p>
+                    <input type="text" placeholder="비밀번호를 입력하세요." />
+                    <div class="checkbox-wrap">
+                        <input type="checkbox" id="check01" /><label for="check01"><span></span>아이디 저장</label>
+                    </div>
+                    <button class="btn btn--red">로그인</button>
+                </section>
+
+                <!-- FREE BOARD -->
+                <section class="free-board">
+                    <div class="title">
+                        <h2>자유게시판</h2>
+                        <div class="btn btn--black"><a href="#"><span class="material-icons">widgets</span> 더보기</a></div>
+                    </div>
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <dl>
+                                    <dd><a href="#">여기는 자유게시판1 자리입니다. 안녕하세요 만나서 반갑습니다. 로또당첨 꼭 되었으면 좋겠습니다.</a></dd>
+                                    <dd><a href="#">여기는 자유게시판2 자리입니다. 안녕하세요 만나서 반갑습니다. 로또당첨 꼭 되었으면 좋겠습니다.</a></dd>
+                                    <dd><a href="#">여기는 자유게시판3 자리입니다. 안녕하세요 만나서 반갑습니다. 로또당첨 꼭 되었으면 좋겠습니다.</a></dd>
+                                    <dd><a href="#">여기는 자유게시판4 자리입니다. 안녕하세요 만나서 반갑습니다. 로또당첨 꼭 되었으면 좋겠습니다.</a></dd>
+                                    <dd><a href="#">여기는 자유게시판5 자리입니다. 안녕하세요 만나서 반갑습니다. 로또당첨 꼭 되었으면 좋겠습니다.</a></dd>
+                                </dl>
+                            </li>
+                            <li class="swiper-slide">
+                                <dl>
+                                    <dd><a href="#">여기는 자유게시판6 자리입니다. 안녕하세요 만나서 반갑습니다. 로또당첨 꼭 되었으면 좋겠습니다.</a></dd>
+                                    <dd><a href="#">여기는 자유게시판7 자리입니다. 안녕하세요 만나서 반갑습니다. 로또당첨 꼭 되었으면 좋겠습니다.</a></dd>
+                                    <dd><a href="#">여기는 자유게시판8 자리입니다. 안녕하세요 만나서 반갑습니다. 로또당첨 꼭 되었으면 좋겠습니다.</a></dd>
+                                    <dd><a href="#">여기는 자유게시판9 자리입니다. 안녕하세요 만나서 반갑습니다. 로또당첨 꼭 되었으면 좋겠습니다.</a></dd>
+                                    <dd><a href="#">여기는 자유게시판10 자리입니다. 안녕하세요 만나서 반갑습니다. 로또당첨 꼭 되었으면 좋겠습니다.</a></dd>
+                                </dl>
+                            </li>
+                            <li class="swiper-slide">
+                                <dl>
+                                    <dd><a href="#">여기는 자유게시판11 자리입니다. 안녕하세요 만나서 반갑습니다. 로또당첨 꼭 되었으면 좋겠습니다.</a></dd>
+                                    <dd><a href="#">여기는 자유게시판12 자리입니다. 안녕하세요 만나서 반갑습니다. 로또당첨 꼭 되었으면 좋겠습니다.</a></dd>
+                                    <dd><a href="#">여기는 자유게시판13 자리입니다. 안녕하세요 만나서 반갑습니다. 로또당첨 꼭 되었으면 좋겠습니다.</a></dd>
+                                    <dd><a href="#">여기는 자유게시판14 자리입니다. 안녕하세요 만나서 반갑습니다. 로또당첨 꼭 되었으면 좋겠습니다.</a></dd>
+                                    <dd><a href="#">여기는 자유게시판15 자리입니다. 안녕하세요 만나서 반갑습니다. 로또당첨 꼭 되었으면 좋겠습니다.</a></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- QNA -->
+                <section class="intro-box qna-intro">
+                    <a href="#"><h2>1:1 문의</h2></a>
+                </section>
+
+                <!-- MEMBERSHIP -->
+                <section class="intro-box membership-intro">
+                    <a href="./membership.html"><h2>멤버십 안내</h2></a>
+                </section>
+
+                <!-- CUSTOMER -->
+                <section class="intro-box client-center">
+                    <h2>고객센터</h2>
+                    <h1 class="font--bold">070-1234-5678</h1>
+                    <div class="center-info">
+                        <p>평일 : 오전 10시 ~ 오후 6시</p>
+                        <p>주말 : 오전 12시 ~ 오후 1시</p>
+                        <p>토,일 공휴일은 휴무입니다.</p>
+                    </div>
+                </section>
+
+                <section class="partner-logo">
+                    <ul>
+                        <li><img src="./_img/partner-logo01.png" alt="특허청 로고"></li>
+                        <li><img src="./_img/partner-logo02.png" alt="공정거래위원회 로고"></li>
+                        <li><img src="./_img/partner-logo03.png" alt="복권위원회 로고"></li>
+                        <li><img src="./_img/partner-logo04.png" alt="동행복권 로고"></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="inner">
+            <div class="logo"><img src="./_img/mainLogo.png" alt="하단 로고"></div>
+            <div class="footer-info">
+                <ul>
+                    <li><a href="#">서비스 이용약관</a></li>
+                    <li><a href="#">개인정보 취급방침</a></li>
+                </ul>
+                <p>사업자번호 : 682-21-01427</p>
+                <p>통신판매업 : 제2020-안양동안-1441호</p>
+                <p>개인정보책임관리자 : 김복기</p>
+                <p>주소 : 경기도 안양시 엘에스로 37, 10층 1006호</p>
+                <p class="copyright">COPYRIGHT ⓒ BY LOTTO ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="footer-bank">
+                <p>로또메이드 계좌번호</p>
+                <p>
+                    <span class="material-icons">savings</span>
+                    기업은행 331-026920-01-012 (더메이드)
+                </p>
+            </div>
+            <div class="footer-call">
+                <p>로또메이드 고객센터</p>
+                <h2>
+                    <span class="material-icons">settings_phone</span>
+                    070-8855-0090
+                </h2>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

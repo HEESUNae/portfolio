@@ -1,0 +1,24 @@
+<svg id="그룹_33" data-name="그룹 33" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61" height="43" viewBox="0 0 61 43">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_68" data-name="사각형 68" width="61" height="43" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_32" data-name="그룹 32" clip-path="url(#clip-path)">
+    <path id="패스_86" data-name="패스 86" d="M60,15A15,15,0,1,1,45,0,15.005,15.005,0,0,1,60,15" fill="#259561"/>
+    <rect id="사각형_66" data-name="사각형 66" width="31" height="24" transform="translate(10 14)" fill="#fff"/>
+    <rect id="사각형_67" data-name="사각형 67" width="31" height="24" transform="translate(10 14)" fill="none" stroke="#383a3a" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="패스_87" data-name="패스 87" d="M59,34h0V31a3.009,3.009,0,0,0-3-3H55l-2.658-5.316A5.329,5.329,0,0,0,48,20H41V38H59a1,1,0,0,0,1-1V35a1,1,0,0,0-1-1" fill="#9df4ef"/>
+    <path id="패스_88" data-name="패스 88" d="M59,34h0V31a3.009,3.009,0,0,0-3-3H55l-2.658-5.316A5.329,5.329,0,0,0,48,20H41V38H59a1,1,0,0,0,1-1V35A1,1,0,0,0,59,34Z" fill="none" stroke="#383a3a" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="패스_89" data-name="패스 89" d="M51,28H45V24h4Z" fill="#fff"/>
+    <path id="패스_90" data-name="패스 90" d="M51,28H45V24h4Z" fill="none" stroke="#383a3a" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="패스_91" data-name="패스 91" d="M53,38a4,4,0,1,1-4-4,4,4,0,0,1,4,4" fill="#fff"/>
+    <circle id="타원_12" data-name="타원 12" cx="4" cy="4" r="4" transform="translate(45 34)" fill="none" stroke="#383a3a" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="패스_92" data-name="패스 92" d="M23,38a4,4,0,1,1-4-4,4,4,0,0,1,4,4" fill="#fff"/>
+    <circle id="타원_13" data-name="타원 13" cx="4" cy="4" r="4" transform="translate(15 34)" fill="none" stroke="#383a3a" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="선_77" data-name="선 77" x1="18" transform="translate(3 10)" fill="none" stroke="#383a3a" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="선_78" data-name="선 78" x1="12" transform="translate(15 6)" fill="none" stroke="#383a3a" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="선_79" data-name="선 79" x1="14" transform="translate(6 26)" fill="none" stroke="#383a3a" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="선_80" data-name="선 80" x1="18" transform="translate(0 30)" fill="none" stroke="#383a3a" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

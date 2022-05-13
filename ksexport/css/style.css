@@ -1,0 +1,284 @@
+@charset "utf-8";
+/*웹폰트*/
+@font-face {
+     font-family: 'S-CoreDream-4Regular';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*공통*/
+*{margin:0;padding:0;border:0;outline:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;*behavior:url("boxsizing.htc")}
+li { list-style:none; }
+
+#wrap { font-family: 'S-CoreDream-4Regular'; letter-spacing:-1px; }
+.inner { width:1200px; margin:0 auto; padding:60px 0; }
+button { font-family: 'GmarketSansMedium'; letter-spacing: -1px;}
+
+/*메인부분*/
+.mainCar { background:url("../img/mainImg.png") no-repeat 50% 50%; background-size:cover; text-align:center; }
+.mainCar .inner { padding:50px 0 60px 0; }
+.mainCar .logo { width:200px; height:67px; margin:0 auto;}
+.mainCar .logo img { width:100%; height:100%; }
+.mainCar .Title { margin:40px 0 30px 0; }
+.mainCar .carArea ul {  overflow:hidden; margin-top:40px; }
+.mainCar .carArea ul li { float:left; width:23%; margin-right:2.66667%; text-align:left;}
+.mainCar .carArea ul li:last-child { margin:0; }
+.mainCar .carArea ul li img { width:100%; height:100%; }
+
+/*상담신청*/
+.consultForm { background:#171d2d; color:#fff; font-family: 'GmarketSansMedium'; }
+.consultForm .title { font-size:30px; font-weight:600; text-align:center; margin-bottom:20px;}
+.consultForm ul { overflow:hidden; }
+.consultForm ul li { float:left; width:29%; }
+.consultForm ul li:nth-child(2) { width:35.7%; margin:0 3%; }
+.consultForm ul li .serviceCenter p,.consultForm ul li .chatService p { font-size:25px; margin-right:5px;}
+.consultForm ul li .serviceCenter dl { overflow:hidden; }
+.consultForm ul li .serviceCenter dl dt { float:left; }
+.consultForm ul li .serviceCenter p span { font-size:17px; color:#aaa;}
+.consultForm ul li .serviceCenter p.callNumber { font-size:33px; font-weight:600; color:#719afa;}
+.consultForm ul li .serviceCenter p.callNumber a { color:#719afa; }
+.consultForm ul li .chatService p.chatId { font-size:30px; font-weight:600; color:#fec202;}
+.consultForm ul li .consultForm { padding:0 38px; border-right:1px solid #2f3442; border-left:1px solid #2f3442; height:270px;}
+.consultForm ul li .consultForm input { font-size:14px; padding:15px; margin-bottom:10px; background:#2f3442; color:#fff; width:100%; }
+.consultForm ul li .consultForm input::placeholder { color:#999; }
+.consultForm ul li .consultForm .agreeArea { overflow:hidden; margin:5px 0 15px 0; }
+.consultForm ul li .consultForm .agreeArea .checks { float:left; }
+.consultForm ul li .consultForm .agreeArea .checks input[type="checkbox"] { display:none; }
+.consultForm ul li .consultForm .agreeArea .checks input[type="checkbox"] + label span { width:13px; height:13px; margin-right:5px; border:2px solid #00adb5; display: inline-block;}
+.consultForm ul li .consultForm .agreeArea .checks input[type="checkbox"]:checked + label span {width:13px; height:13px; background:url("../img/checkbox_on.png") no-repeat; border:0; display: inline-block;}
+.consultForm ul li .consultForm .agreeArea .checks span { position:relative; top:2px; }
+.consultForm ul li .consultForm .agreeArea .checks label[for="agreeCheck"] { position:relative; top:1px; }
+.consultForm ul li .consultForm .agreeArea .agreeBtn {width:40px; height:20px; line-height:23px; font-size:10px; text-align:center; background:#333; border-radius:3px; float:right; cursor:pointer; }
+.consultForm ul li .consultForm button { width:100%; height:55px; line-height:59px; font-size:21px; font-weight:600; color:#fff; background:#00adb5; border-radius:5px;}
+
+/*중간배너*/
+.middleBnr { overflow:hidden; }
+.middleBnr .bnrSlide { height:auto; float:left; }
+.middleBnr .bnrSlide img { width:100%; }
+
+/*실시간 문의리스트*/
+.consultList h1,.reviewList h1 { margin-bottom:50px; font-size:37px; color:#171d2d; text-align:center;}
+.consultList h1 span,.reviewList h1 span { font-weight:600; }
+.consultList .tableHead { background:#00adb5; }
+.consultList .tableHead ul { width:100%; overflow:hidden; }
+.consultList .tableHead ul li { width:15%; padding:15px; color:#fff; font-size:20px; font-weight:600; text-align:center; float:left;}
+.consultList .tableHead ul li.subject { width:85%; }
+
+.consultList .tableBody { height:750px !important; }
+.consultList .tableBody ul { width:100%; }
+.consultList .tableBody ul li { height:70px !important; line-height:70px; font-size:18px; background:#f4f4f4; }
+.consultList .tableBody ul li dl { overflow:hidden; margin-top:5px; }
+.consultList .tableBody ul li dl dt { float:left; color:#444;}
+.consultList .tableBody ul li dl dt:nth-child(1) { width:8%; height:70px; background:url("../img/newIco.png") no-repeat 50% 50%; display:inline-block;}
+.consultList .tableBody ul li dl dt:nth-child(2) { width:77%; }
+.consultList .tableBody ul li dl dt:nth-child(3) { width:15%; text-align:center; }
+
+/*거래후기*/
+.reviewList { background:#f4f4f4; }
+.reviewList ul { overflow:hidden; width:100%; margin-bottom:20px; box-shadow:3px 3px 10px rgba(0,0,0,0.1);}
+.reviewList ul li {width:77%; height:230px; background:#fff; float:left; }
+.reviewList ul li:nth-child(1) { width:23%; }
+.reviewList ul li:nth-child(2) { padding:20px; }
+.reviewList ul li img { width:100%; height:100%; }
+.reviewList ul li h2 { color:#171d2d; margin-bottom:10px; font-size:22px; }
+.reviewList ul li p { font-size:17px; }
+
+/*판매절차*/
+.process { background:url('../img/processBg.png') no-repeat 50% 50%; background-size: cover;}
+.process h1 { margin-bottom:50px; font-size:37px; color:#fff; text-align:center; }
+.process h1 span { font-weight:600; }
+.process ul { width:100%; overflow:hidden; }
+.process ul li { width:15.8%; margin-right:1%; padding:20px 0; background:#fff; border:5px solid #ccc; text-align:center; float:left; position:relative; box-sizing:border-box}
+.process ul li:last-child { margin:0; }
+.process ul li:after { content:''; width:45px; height:45px; background:url('../img/proArrow.png') no-repeat; position:absolute; top:44%; right:-20%; z-index:999; }
+.process ul li:last-child:after { display:none; }
+.process ul li .imgArea { height:120px; line-height:120px;}
+.process ul li .imgArea img { vertical-align:middle; }
+.process ul li p { font-size:19px; height:48px; color:#171d2d;}
+.process ul li p.proNumber { padding-bottom:10px; font-size:22px; font-weight:600; border-bottom:3px solid #171d2d; display:inline-block; }
+
+footer { background:#e9e9e9; }
+footer ul.infoArea,footer ul li dl { overflow:hidden; }
+footer ul li,footer ul li dl dt { float:left; }
+footer ul li { width:50%; color:#444; line-height:24px; }
+footer ul li:nth-child(2){ float:right; text-align:right; }
+footer ul li dl dt:nth-child(1){ width:12%; color:#888; }
+
+
+
+/*web responsive hidden*/
+.mobile860,.mobile460 { display:none; }
+
+/*responsive 1220px*/
+@media screen and (max-width: 1220px) { 
+#wrap { min-width:auto; }
+.inner { width:85%; padding:50px 0; overflow:hidden; }
+.mainCar .inner { padding:50px 0; }
+.mainCar .logo { width:190px; height:63px; }
+.mainCar .Title { margin:40px 0 20px 0; }
+.mainCar .Title img { width:80%; }
+.mainCar .Article img { width:65%; }
+.mainCar .carArea ul li { width:23.8%; margin-right:1.5%; }
+.consultForm .title { font-size:28px; margin-bottom:15px; }
+.consultForm ul li { width:30%; }
+.consultForm ul li:nth-child(2) { margin:0 2.1%; }
+.consultForm ul li img { width:100%; }
+.consultForm ul li .consultForm { height:225px; padding:0 10px; border:0; }
+.consultForm ul li .consultForm input { padding:12px; margin-bottom:7px; }
+.consultForm ul li .consultForm button { height:50px; line-height:55px; font-size:18px; }
+.consultForm ul li .consultForm .agreeArea { margin:0 0 10px 0; }
+.consultForm ul li .serviceCenter p span { font-size:13px; }
+.consultForm ul li .serviceCenter p.callNumber { font-size:27px; margin-bottom:15px; }
+.consultForm ul li .chatService p.chatId { font-size:27px; margin-bottom:15px; }
+.consultList h1, .reviewList h1,.process h1 { font-size:30px; margin-bottom:30px;}
+.consultList .tableHead ul li { font-size:16px; }
+.consultList .tableBody { height:650px !important; }
+.consultList .tableBody ul li { height:60px !important; line-height:60px; font-size:16px; }
+.consultList .tableBody ul li dl dt:nth-child(1) { width:10%; height:60px; }
+.consultList .tableBody ul li dl dt:nth-child(2) { width:75%; }
+.consultList .tableBody ul li dl dt:nth-child(3) { width:15%;}
+.reviewList ul li { width:74%; }
+.reviewList ul li:nth-child(1) { width:26%; }
+.reviewList ul li:nth-child(2) { padding:20px; }
+.reviewList ul li h2 { font-size:20px; margin:0; }
+.reviewList ul li p { font-size:15px; }
+.process ul li p { font-size:17px; }
+footer ul li { line-height:22px; }
+footer ul li dl dt { font-size:13px; }
+
+.layerPopup .layerBody { width:600px; }
+#policyUse .contPop, #policyPersonal .contPop { width:100%; }
+}
+
+/*responsive 1000px*/
+@media screen and (max-width: 1000px) {
+.mainCar .inner,.inner { padding:40px 0; }
+.mainCar .logo { width:180px; height:60px; }
+.mainCar .Title { margin:30px 0 15px 0 }
+.mainCar .carArea ul { margin-top:30px; }
+.consultForm .title { font-size:24px; margin-bottom:10px; }
+.consultForm ul li .serviceCenter p, .consultForm ul li .chatService p { font-size:20px; }
+.consultForm ul li .consultForm input { font-size:12px; padding:10px; }
+.consultForm ul li .chatService p.chatId,.consultForm ul li .serviceCenter p.callNumber { font-size:24px; margin-bottom:20px; }
+.consultForm ul li .consultForm button { height:45px; line-height:50px; font-size:17px; }
+.consultForm ul li .consultForm .agreeArea .checks label[for="agreeCheck"] { font-size:12px; }
+.consultList h1, .reviewList h1, .process h1 { font-size:26px; }
+.consultList .tableHead ul li { font-size:15px; padding:10px; }
+.consultList .tableBody { height:550px !important; }
+.consultList .tableBody ul li { height:50px !important; line-height:50px; font-size:14px; }
+.consultList .tableBody ul li dl { margin-top:3px; }
+.consultList .tableBody ul li dl dt:nth-child(1) { width:10%; height:50px; background-size:50px 25px; }
+.consultList .tableBody ul li dl dt:nth-child(2) { width:75%; }
+.consultList .tableBody ul li dl dt:nth-child(3) { width:15%; }
+.reviewList ul li { height:200px; }
+.reviewList ul li h2 { font-size:18px; margin-bottom:5px; }
+.reviewList ul li p { font-size:13px; }
+.reviewList ul li:nth-child(2) { padding:15px; }
+.process ul li { border:3px solid #ccc; padding:20px 0 10px 0;}
+.process ul li p { font-size:15px; }
+.process ul li p.proNumber { font-size:18px; border-bottom:2px solid #171d2d; height:35px; }
+.process ul li:after { width:35px; height:35px; background-size:cover; }
+.process ul li .imgArea { height:100px; line-height:100px; }
+.process ul li .imgArea img { width:50%; }
+footer ul li dl dt { font-size:12px; }
+
+}
+
+/*responsive 860px*/
+@media screen and (max-width: 860px) {
+.widWeb { display:none; }
+.mobile860 { display:block; }
+
+.mainCar .logo { width:170px; height:56px; }
+.consultForm .title { font-size:21px; text-align: left;}
+.consultForm ul li { width:50% !important; margin:0 !important; }
+.consultForm ul li .consultForm {height:auto; padding:0 10px 0 0; }
+.consultForm ul li:last-child { border-radius:5px; border:3px solid #2f3442; padding:15px; }
+.consultForm ul li:last-child .serviceCenter { border-bottom:2px solid #2f3442; padding-bottom:10px; margin-bottom:10px; background:url('../img/centerImg.png') no-repeat 100% 50%; background-size:150px auto; }
+.consultForm ul li:last-child .chatService { background:url('../img/chatImg.png') no-repeat 100% 30%; background-size:150px auto; }
+.consultForm ul li .chatService p.chatId, .consultForm ul li .serviceCenter p.callNumber { margin:0; font-size:22px; }
+.consultForm ul li .serviceCenter dl dt { float:none; }
+.consultForm ul li img { width:160px; position:absolute; top:0px; right:-11px; }
+.consultList .tableBody ul li dl dt:nth-child(1) { background-size:35px 18px; }
+.reviewList ul { width:49%; overflow:hidden; float:left; margin-right:1%; height:550px; background:#fff; }
+.reviewList ul li { width:100% !important; height:auto; }
+.reviewList ul li h2 { font-size:17px; }
+.reviewList ul li p { font-size:12px; }
+.process ul li { padding:15px 0 5px 0; width:32.3%; margin-bottom:1%; }
+.process ul li p { font-size:14px; }
+.process ul li p.proNumber { font-size:16px; height:30px; }
+.process ul li .imgArea { height:90px; line-height:90px; }
+.process ul li .imgArea img { width:30%; }
+.process ul li:after { display:none; }
+footer ul li { line-height:18px; }
+footer ul li dl dt { font-size:11px; }
+footer ul li dl dt:nth-child(1) { width:20%; }
+}
+
+/*responsive 660px*/
+@media screen and (max-width: 660px) {
+.mainCar .inner, .inner { padding:30px 0; }
+.mainCar .Title img { width:100%; }
+.mainCar .Article img { width:90%; }
+.mainCar .carArea ul li { width:49%; margin-bottom:1.5%; }
+.mainCar .carArea ul li:nth-child(2n) { margin:0; }
+.consultForm .title { text-align:center; }
+.consultForm ul li .serviceCenter p, .consultForm ul li .chatService p { font-size:17px; }
+.consultForm ul li .chatService p.chatId, .consultForm ul li .serviceCenter p.callNumber { font-size:20px; }
+.consultForm ul li { width:100% !important; }
+.consultForm ul li .consultForm { padding:0 0 20px 0; }
+.consultForm ul li .serviceCenter dl dt { float:left; }
+.consultForm ul li:last-child .serviceCenter { background-size:110px auto; }
+.consultForm ul li:last-child .chatService { background-size:110px auto; }
+.consultList h1, .reviewList h1, .process h1 { font-size:22px; margin-bottom:20px; }
+.consultList .tableHead ul li { width:20%; font-size:13px;}
+.consultList .tableHead ul li.subject { width:80%; }
+.consultList .tableBody { height:430px !important; }
+.consultList .tableBody ul li { height:40px !important; line-height:40px; font-size:13px; }
+.consultList .tableBody ul li dl dt:nth-child(1) { width:15%; height:40px; }
+.consultList .tableBody ul li dl dt:nth-child(2) { width:65%; }
+.consultList .tableBody ul li dl dt:nth-child(3) { width:20%; }
+.reviewList ul { width:100%; margin-right:0; height:auto; }
+.reviewList ul:last-child { margin-bottom:0; }
+.process ul li { width:49%; }
+footer ul li { width:100%; }
+
+.layerPopup .layerBody { width:450px; }
+.layerPopup .layerBody h2.tit { font-size:18px; padding-left:20px; height:60px; line-height:60px; }
+.layerPopup .layerBody h2.tit .desc { display:none; }
+}
+
+/*responsive 460px*/
+@media screen and (max-width: 460px) {
+.WebBnr { display:none; }
+.mobile460 { display:block; }
+
+.mainCar .logo { width:130px; height:43px; }
+.mainCar .Title { margin:25px 0 10px 0; }
+.mainCar .carArea ul { margin-top:20px; }
+.consultForm ul li .serviceCenter p span { font-size:11px; }
+.consultForm ul li:last-child .serviceCenter { background-size:100px auto; }
+.consultForm ul li:last-child .chatService { background-size:100px auto; }
+.consultList h1, .reviewList h1, .process h1 { font-size:20px; }
+.consultList .tableHead ul li { padding:7px;  }
+.consultList .tableBody ul li { font-size:12px; }
+.reviewList ul li h2 { font-size:16px; }
+.process ul li .imgArea { height:70px; line-height:70px; }
+footer .inner { padding-bottom:90px; }
+
+.fixedCunsult ul { width:100%; overflow:hidden; position:fixed; bottom:0; z-index:999; }
+.fixedCunsult ul li { width:50%; height:60px; line-height:60px; float:left; text-align:center; }
+.fixedCunsult ul li:nth-child(1) { background:#14acb9; }
+.fixedCunsult ul li:nth-child(2) { background:#1e191a; }
+.fixedCunsult ul li a { display:block; font-size:18px; font-weight:600; color:#fff; font-family: 'GmarketSansMedium';}
+.scrolled .fixedCunsult ul { display:block; }
+
+.layerPopup .layerBody { width:330px; }
+.layerPopup .layerBody .close {width:60px; height:60px; background-size: 15px 15px; }
+}

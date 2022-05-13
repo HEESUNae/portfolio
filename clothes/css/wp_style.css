@@ -1,0 +1,168 @@
+/**
+ * Created by PhpStorm.
+ * Date         : 2021-11-12
+ * Developer    : SeHwan Hwang
+ * Description  : wp_style.css
+ * ⓒ 2021. WebPlanet Co. All Rights Reserved.
+ */
+
+@charset "utf-8";
+
+/**********************************************************************************************************************/
+/* 작성방법 */
+/*
+1. 모든 스타일은 클래스명 .wp_wrap 을 시작으로 작성한다.
+2. 공통 스타일의 클래스명은 cm_ 접두어를 사용한다.
+ */
+/**********************************************************************************************************************/
+
+
+/**********************************************************************************************************************/
+/* 공통 스타일 */
+/**********************************************************************************************************************/
+/*공통*/
+.wp_wrap { overflow: hidden; }
+.wp_wrap .cm_inner { width: 1300px; margin: 0 auto; }
+
+/* 컬러 */
+.wp_wrap .cm_color01 { color: #e40b6c !important; }
+
+/* 폰트 */
+.wp_wrap .cm_font01 { font-family: 'SeoulNamsanM'; }
+
+
+
+
+/**********************************************************************************************************************/
+
+
+
+/**********************************************************************************************************************/
+/* 메인 */
+/**********************************************************************************************************************/
+html { font-size: 10px; }
+
+/* pc버전 헤더*/
+.wp_wrap .pc_header { background: #fafafa; font-family: 'SeoulNamsanM'; }
+.wp_wrap .pc_header .header_top { height: 40px; display: flex; justify-content: flex-end; align-items: center; }
+.wp_wrap .pc_header .header_top li { text-transform: uppercase; line-height: 1; }
+.wp_wrap .pc_header .header_top li::before { content:'/'; padding: 0 5px; }
+.wp_wrap .pc_header .header_top li:nth-child(1)::before { display: none; }
+.wp_wrap .pc_header .header_top li:last-child::before { display: none; }
+.wp_wrap .pc_header .header_top .search_btn { background: none; width: 15px; height: 12px; margin-left: 5px; display: inline-flex; }
+.wp_wrap .pc_header .logo_wrapper { height: 95px; align-items: center; }
+.wp_wrap .pc_header .logo_wrapper .logo { font-family: 'SeoulHangangM'; font-size: 1.8rem; letter-spacing: 2px; }
+.wp_wrap .pc_header .logo_wrapper .logo a { color: #414d5d; }
+.wp_wrap .pc_header .logo_wrapper .logo span { font-size: 3.6rem; }
+.wp_wrap .pc_header .logo_wrapper .utill { display: flex; justify-content: flex-end; }
+.wp_wrap .pc_header .logo_wrapper .utill li { text-transform: uppercase; line-height: 1; position: relative; }
+.wp_wrap .pc_header .logo_wrapper .utill li::before { content:'/'; padding: 0 5px; }
+.wp_wrap .pc_header .logo_wrapper .utill li:nth-child(1)::before { display: none; }
+.wp_wrap .pc_header .logo_wrapper .utill li a { color: #262626; letter-spacing: 2px; }
+.wp_wrap .pc_header .logo_wrapper .utill li .cupon_ico { position: absolute; top:18px; left:50%; transform: translate(-50%, 0); width: 42px; height: 20px; color: #fff; font-size: 1.0rem; padding: 8px 11px; background: url('../img/cupon_ico.png') no-repeat 50% 50%; }
+.wp_wrap .pc_header nav ul { height: 60px; display: flex; align-items: center; }
+.wp_wrap .pc_header nav ul li { margin-right: 40px; text-transform: uppercase; line-height: 1; letter-spacing: 2px; }
+.wp_wrap .pc_header nav ul li a { color: #262626; }
+.wp_wrap .pc_header .sns { font-size: 2.4rem; color: #3d3939; display: flex; align-items: center; justify-content: flex-end;}
+
+/* 모바일버전 헤더 */
+.wp_wrap .mobile_header { position: fixed; z-index: 999; display: none; width: 100%; height: 52px; background: #fcfbfb; border:1px solid #ccc; padding: 0 10px; box-sizing: border-box; }
+.wp_wrap .mobile_header .hamberger { background: none; }
+.wp_wrap .mobile_header .logo { font-size: 1.6rem; font-family: 'SeoulHangangM'; color: #414d5d; display: flex; justify-content: center; align-items: center;}
+.wp_wrap .mobile_header .logo a { color: #414d5d; }
+.wp_wrap .mobile_header .logo span { font-size: 3.0rem; }
+.wp_wrap .mobile_header .sns { color: #3d3939; display: flex; align-items: center; justify-content: flex-end;}
+.wp_wrap .mobile_header .sns a { display: flex; font-size: 2.1rem; }
+.wp_wrap .mobile_header .sns button { display: flex; font-size: 2.1rem; background: none; }
+
+.wp_wrap .moblie_navi_wrap.active .moblie_mask { display: block; }
+.wp_wrap .moblie_navi_wrap.active .mobile_navi { transform: translateX(0); }
+.wp_wrap .moblie_navi_wrap .moblie_mask {display: none; position: absolute; top:0; left:0; z-index: 999; width: 100%; height: 100%; background: rgba(44,39,29,0.64);}
+.wp_wrap .moblie_navi_wrap .mobile_navi {transform: translateX(-360px); transition:0.5s; height: 100vh; box-shadow: 1px 1px 5px rgba(0,0,0,0.2); font-family: 'SeoulNamsanM'; text-transform: uppercase; position: fixed; z-index: 999; font-size: 2.5rem; width: 355px; padding: 10px; background: #fffffe; }
+.wp_wrap .moblie_navi_wrap .mobile_navi .navi_list_wrapper { display: flex; justify-content: space-between; }
+.wp_wrap .moblie_navi_wrap .mobile_navi .navi_list:nth-child(2) ul li a { color: #666; }
+.wp_wrap .moblie_navi_wrap .mobile_navi .navi_list ul {  width: 160px;  padding:20px 7px 5px; border-top: 1px solid #ccc; }
+.wp_wrap .moblie_navi_wrap .mobile_navi .navi_list ul > li { margin-bottom: 15px; line-height: 1; font-size: 1.6rem; font-weight: 600;  }
+.wp_wrap .moblie_navi_wrap .mobile_navi .navi_list ul > li ul {  display: none }
+.wp_wrap .moblie_navi_wrap .mobile_navi .navi_list ul li ul li { margin-top: 15px; font-size: 1.4rem; text-transform: capitalize; }
+.wp_wrap .moblie_navi_wrap .mobile_navi .navi_list ul li a { color: #2c271d; }
+.wp_wrap .moblie_navi_wrap .mobile_navi .navi_list ul li ul li a { color: #666; }
+.wp_wrap .moblie_navi_wrap .mobile_navi .navi_list ul li ul li::before { content:'·'; margin-right: 5px; }
+.wp_wrap .moblie_navi_wrap .mobile_navi .colse_wrapper .close_btn { display: inline-flex; font-size: 2.5rem; background: #fff; line-height: 1; }
+
+/* 메인 - 메인슬라이드01 */
+.wp_wrap .main_sec01 { padding: 70px 0; background: #fafafa; }
+.wp_wrap .main_sec01 .main_slide01 { overflow: hidden; position: relative; }
+.wp_wrap .main_sec01 .swiper-container01 .swiper-horizontal>.swiper-pagination-bullets,
+.wp_wrap .main_sec01 .swiper-container01 .swiper-pagination-bullets.swiper-pagination-horizontal { bottom: 30px; }
+.wp_wrap .main_sec01 .swiper-container01 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.wp_wrap .main_sec01 .swiper-container01 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet { margin:0 var(--swiper-pagination-bullet-horizontal-gap,3px); }
+.wp_wrap .main_sec01 .swiper-container01 .swiper-pagination-bullet {width: 10px; height: 10px; background: #fff; margin: 0; }
+.wp_wrap .main_sec01 .swiper-container01 .swiper-pagination-bullet-active { background: #fff; }
+
+/* 메인 - 메인슬라이드02 */
+.wp_wrap .main_sec02 { padding: 95px 0; }
+.wp_wrap .main_sec02 .main_slide02 { position: relative; }
+.wp_wrap .main_sec02 .main_slide02 .swiper-container02 { margin: 0 85px; }
+.wp_wrap .main_sec02 .main_slide02 .swiper-container02 h2 { font-size: 1.8rem; color: #707171; font-weight: 600; line-height: 1; margin-bottom: 15px; letter-spacing: 1px;}
+.wp_wrap .main_sec02 .main_slide02 .swiper-container02 .wp_frame { position: relative; padding-top: 69.275%; overflow: hidden; }
+.wp_wrap .main_sec02 .main_slide02 .swiper-container02 img { position: absolute; top:0; left:0; right: 0; bottom:0; max-width: 100%; width: 100%; margin: auto 0; height: 100%; object-fit: cover; }
+.wp_wrap .main_sec02 .main_slide02_prev { position: absolute; top:50%; left:35px; transform: translate(0 ,-50%); }
+.wp_wrap .main_sec02 .main_slide02_next { position: absolute; top:50%; right:35px; transform: translate(0 ,-50%); transform: rotate(180deg);}
+.wp_wrap .main_sec02 button { background: none; }
+
+/* 메인 - new_arrival */
+.wp_wrap .main_sec03 { padding: 60px 0 70px; }
+.wp_wrap .main_sec03 h1 { margin-bottom: 45px; height: 20px; font-size: 1.4rem; text-transform: uppercase; font-weight: 600; line-height: 20px; text-align: center; letter-spacing: 2px; }
+
+.wp_wrap #wp_skin02 { font-size: 1.2rem; }
+.wp_wrap #wp_skin02 ul li { padding: 15px; text-align: center; }
+.wp_wrap #wp_skin02 .wp_frame { position: relative; padding-top: 120%; overflow: hidden; }
+.wp_wrap #wp_skin02 ul li img { position: absolute; top:0; left:0; right:0; bottom:0; max-width: 100%; width: 100%; margin:auto 0; height: 100%; object-fit: cover; }
+.wp_wrap #wp_skin02 ul li .txt { padding: 25px 0 35px; }
+.wp_wrap #wp_skin02 ul li .txt .title { margin-bottom: 5px; color: #282828; font-weight: 400; line-height: 1; }
+.wp_wrap #wp_skin02 ul li .txt .price_cost { color: #737373; text-decoration: line-through; }
+.wp_wrap #wp_skin02 ul li .txt .price_sale { color: #282828; }
+.wp_wrap #wp_skin02 ul li .txt .article { margin: 5px 0 15px; font-size: 1.3rem; }
+.wp_wrap #wp_skin02 ul li .txt .ico_wrapper { display: flex; }
+.wp_wrap #wp_skin02 ul li .txt .ico_wrapper::after { content:''; display: block; clear: both; }
+.wp_wrap #wp_skin02 ul li .txt .ico_wrapper div { float: left; width: 25%; height: 20px; margin-right: 5px; display: flex; align-items: center; justify-content: center;}
+.wp_wrap #wp_skin02 ul li .txt .ico_wrapper div:last-child { margin-right: 0; }
+.wp_wrap #wp_skin02 ul li .txt .ico_wrapper .sale { background: #bd2026; color: #fff; }
+.wp_wrap #wp_skin02 ul li .txt .ico_wrapper .new { background: #b4632f; color: #fff; }
+.wp_wrap #wp_skin02 ul li .txt .ico_wrapper .best { background: #204c7d; color: #fff; }
+.wp_wrap #wp_skin02 ul li .txt .ico_wrapper .rcmd { color: #fd7979; }
+.wp_wrap #wp_skin02 ul li .txt .ico_wrapper .rcmd i { color: #fd7979; font-size: 0.8rem; margin-right: 2px;}
+
+/* 풋터 */
+.wp_wrap footer { background: #f6f6f6; line-height: 1; }
+.wp_wrap footer .cm_inner { padding: 60px 0 150px;}
+.wp_wrap footer .company_number { font-size: 2.0rem; color: #282828; }
+.wp_wrap footer .footer_utill { display: flex; justify-content: flex-end; font-size: 1.4rem; }
+.wp_wrap footer .footer_utill li a { font-size: 1.4rem; text-transform: uppercase; }
+.wp_wrap footer .footer_utill li a::before { content:'|'; margin: 0 5px; }
+.wp_wrap footer .footer_utill li:nth-child(1) a::before { display: none; }
+.wp_wrap footer .info { line-height: 1.7; }
+.wp_wrap footer .info p span::after { content:'|'; margin: 0 5px; }
+.wp_wrap footer .info p span:last-child::after { display: none; }
+.wp_wrap footer .info:nth-child(3) { padding: 30px 0; word-break: keep-all; }
+.wp_wrap footer .info:nth-child(3) p br { display: none; }
+/**********************************************************************************************************************/
+
+
+
+/**********************************************************************************************************************/
+/* 페이지구분2 */
+/**********************************************************************************************************************/
+/*페이지구분1 배너1*/
+.wp_wrap .page2 .banner1 {}
+.wp_wrap .page2 .banner1 div {}
+.wp_wrap .page2 .banner1 div span {}
+
+/*페이지구분1 배너2*/
+.wp_wrap .page2 .banner2 {}
+.wp_wrap .page2 .banner2 div {}
+.wp_wrap .page2 .banner2 div span {}
+
+
+/**********************************************************************************************************************/

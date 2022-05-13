@@ -1,0 +1,124 @@
+/**
+ * Created by PhpStorm.
+ * Date         : 2021-11-12
+ * Developer    : SeHwan Hwang
+ * Description  : wp_responsive.css
+ * ⓒ 2021. WebPlanet Co. All Rights Reserved.
+ */
+
+@charset "utf-8";
+
+/**********************************************************************************************************************/
+/* 작성방법 */
+/*
+1. 모든 스타일은 클래스명 .wp_wrap 을 시작으로 작성한다.
+2. 공통 스타일의 클래스명은 cm_ 접두어를 사용한다.
+ */
+/**********************************************************************************************************************/
+
+@media (max-width: 1400px) {
+  /**********************************************************************************************************************/
+  /* 메인 */
+  /**********************************************************************************************************************/
+  .wp_wrap { display: block; }
+  .wp_wrap .contents { width: 100%; }
+  .wp_wrap .pc_header { width: 100%; height: auto; padding: 30px; box-shadow: 1px 1px 10px rgba(0,0,0,0.2); z-index: 999; }
+  .wp_wrap .pc_header .header_top { display: flex; justify-content: space-between;}
+  .wp_wrap .pc_header nav { margin-top: 0;}
+  .wp_wrap .pc_header nav > ul { display: flex; }
+  .wp_wrap .pc_header nav li { padding: 7px 10px 0; }
+  .wp_wrap .pc_header nav li ul li { text-align: center; }
+  .wp_wrap .pc_header .header_info { display: none; }
+  /**********************************************************************************************************************/
+}
+
+
+@media (max-width: 1200px) {
+
+}
+
+
+@media (max-width: 992px) {
+  /**********************************************************************************************************************/
+  /* 메인 */
+  /**********************************************************************************************************************/
+  /* swiper 페이징 스타일 */
+  .wp_wrap .swiper-pagination-bullet { width: 20px; height: 20px; }
+
+  /* project */
+  .wp_wrap .main_sec03 { padding: 60px 10px; }
+  .wp_wrap .main_sec03 .cm_sec_title { margin-bottom: 50px; }
+  .wp_wrap .main_sec03 .project_slide li { padding: 10px; }
+  .wp_wrap .main_sec03 .project_slide li .img_wrapper .txt { padding: 20px; }
+
+  /* cummunity */
+  .wp_wrap .main_sec04 > ul > li { width: 31.33%; margin-right: 3%; }
+
+  /* contact */
+  .wp_wrap .main_sec05 iframe { height: 100%; }
+  /**********************************************************************************************************************/
+}
+
+
+@media (max-width: 768px) {
+  /**********************************************************************************************************************/
+  /* 메인 */
+  /**********************************************************************************************************************/
+  /* swiper 페이징 스타일 */
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal { bottom: 0 !important; }
+
+  /* 공통 */
+  .wp_wrap .cm_pc { display: none; }
+  .wp_wrap .cm_moblie { display: block; }
+
+  /* 메인슬라이드 */
+  .wp_wrap [class*="main_sec"] { padding-top: 40px; padding-bottom: 40px; }
+  .wp_wrap .main_sec01 { padding: 0; }
+
+  /* ubout */
+  .wp_wrap .main_sec02 .photo_box { margin: 0 0 20px 0;}
+
+  /* cummunity */
+  .wp_wrap .main_sec04 ul li { width: 100%; margin-right: 0; }
+  .wp_wrap .main_sec04 ul li .card_box { margin-bottom: 30px; }
+  .wp_wrap .main_sec04 ul li:last-child .card_box { margin-bottom: 0; }
+
+  /* contact */
+  .wp_wrap .main_sec05 .map { order:2; margin-top: 30px; height: 300px; }
+  .wp_wrap .main_sec05 .contact_wrapper { padding: 0; order:1; }
+  /**********************************************************************************************************************/
+}
+
+
+@media (max-width: 576px) {
+  /**********************************************************************************************************************/
+  /* 메인 */
+  /**********************************************************************************************************************/
+  /* swiper 페이징 스타일 */
+  .wp_wrap .swiper-pagination-bullet { width: 15px; height: 15px; }
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal { position: inherit; margin-top: 20px; }
+
+  /* 공통 */
+  html { font-size: 9.5px; }
+  .wp_wrap .contents { margin-top: 0; }
+  .wp_wrap .cm_sec_title { margin-bottom: 40px; }
+
+  .wp_wrap .pc_header { display: none; }
+  .wp_wrap .moblie_header { display: flex; }
+
+  /* 메인슬라이드 */
+  .wp_wrap .main_sec01 .main_slide [class*="main_slide_"] { display: none; }
+
+  /* ubout */
+  .wp_wrap .main_sec02 p br { display: none; }
+
+  /* project */
+  .wp_wrap .main_sec03 { margin: 0 20px; padding: 0; }
+  .wp_wrap .main_sec03 .cm_sec_title { margin-bottom: 30px; }
+  .wp_wrap .main_sec03 .project_slide li { padding: 5px; }
+  .wp_wrap .main_sec03 .project_slide li .img_wrapper .txt { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; }
+
+  /* contact */
+  .wp_wrap .main_sec05 .contact_wrapper .sns_wrapper { display: none; }
+  /**********************************************************************************************************************/
+}

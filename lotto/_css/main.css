@@ -1,0 +1,170 @@
+/*로또첼린지 - 공통*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+li,a { list-style:none; text-decoration:none; }
+body,ul,p,dd,dl { font-family: 'Noto Sans KR', sans-serif; margin:0; padding:0; letter-spacing:-1px; }
+input,button { font-family: "Noto Sans KR"; }
+.inner { width:1200px; margin:0 auto; }
+
+.leftArrow { float:left; width:40px; height:40px; background:url('../_img/left_arrow.png') no-repeat 50% 50% #1d1d1d; cursor:pointer; }
+.rightArrow {float:left; width:40px; height:40px; background:url('../_img/right_arrow.png') no-repeat 50% 50% #1d1d1d; cursor:pointer; }
+.leftArrow:hover,.rightArrow:hover { background-color:#ff4700; transition:.5s; }
+
+#wrap { min-width:1250px; }
+
+
+/*로또첼린지 - header*/
+header { background:#1d1d1d; border-bottom:2px solid #e8c685; padding:1.5em 0 1.2em 0; }
+header .inner { margin:0 auto; overflow:hidden; }
+header .inner .logo { float:left; }
+header .inner ul.topmenu { float:left; overflow:hidden; padding: 0 5.4em;}
+header .inner ul.topmenu li { float:left; }
+header .inner ul.topmenu li a { color:#fff; padding:0 1em; font-size:18px; vertical-align:middle; }
+header .inner ul.topmenu li a:hover,header .inner ul.topmenu li a:active { color:#e8c685;}
+header .inner ul.login_join { float:right; }
+header .inner ul.login_join li { float:left; overflow:hidden;}
+header .inner ul.login_join li a { color:#e8c685; padding:0 .5em; font-size:14px; vertical-align:middle;}
+
+/*로또첼린지 - contents*/
+.banner { overflow:hidden; height:700px; }
+.banner .bnr01 { position:relative; }
+.banner .bnr01 .bg { background:url('../_img/bnr01_bg.png') no-repeat 50% 50% #1d1d1d; height:700px; background-size:cover;-webkit-animation: kenburns-top 5s ease-out both; animation: kenburns-top 5s ease-out both;  }
+.banner .bnr01 .pattun { position:absolute; bottom:-5px; left:0; } 
+.banner .bnr01 .hand { text-align:right; }
+.banner .bnr01 .inner { width:1200px;  position:absolute; top:0; left:50%; margin-left:-600px; }
+.banner .bnr01 .inner ul { margin-top:3.8em; }
+.banner .bnr01 .inner ul li { float:left; }
+.banner .bnr01 .inner ul li.bnr01_cont { padding-top:5.5em; width:60%;}
+.banner .bnr01 .inner ul li.bnr01_cont .lately_number { margin-top:2em; }
+.banner .bnr01 .inner ul li.bnr01_cont .lately_number p { color:#f4c782; font-size:30px; margin-bottom:15px;}
+.banner .bnr01 .inner ul li.bnr01_cont .lately_number p span { font-weight:600; }
+.banner .bnr01 .inner ul li.bnr01_cont .lately_number dd { float:left; border:3px solid #f4c782; border-radius:100%; background:#1f1c14; color:#f4c782; width:60px; line-height:60px; text-align:center; margin-right:10px; font-size:24px; }
+.banner .bnr01 .inner ul li.bnr01_cont .lately_number dd:nth-child(7) { border:0;  background:none; }
+.banner .bnr01 .inner ul li.bnr01_img { background:url('../_img/bnr01_hand.png') no-repeat 100% 60%; width:40%; height:600px;}
+.banner .bnr01 .inner ul li.bnr01_img img { margin:-2em 0 0 -3.5em }
+.banner .bnr01 .inner ul li .bnr01_maintit { margin:10px 0 3em 0; }
+
+/*로또첼린지 - 당첨번호 + 추첨방송*/
+.numplay { background:#f4f4f4; padding:3em 0;}
+.numplay .inner ul { overflow:hidden; }
+.numplay .inner ul li { float:left; background:#fff; width:29%; padding:1em; box-sizing:border-box;}
+.numplay .inner ul li:first-child { margin-right:1%; width:70%;}
+.numplay .inner ul li p.tit { font-size:25px; font-weight:600; letter-spacing:-1.5px; }
+.numplay .inner ul li p span { color:#ff4700; }
+.numplay .inner ul li .subtit { color:#888; margin-top:10px;}
+.numplay .inner ul li .num .numTit { overflow:hidden; margin-bottom:10px; }
+.numplay .inner ul li .num .tit { text-align:center; float:left; width:90%; }
+.numplay .inner ul li .num .subtit { font-size:15px; vertical-align:middle; }
+.numplay .inner ul li .num .numCont .lottobol { background:#ebebeb; padding:1em; box-sizing:border-box; text-align:center;}
+.numplay .inner ul li .num .numCont .lottobol dl { overflow:hidden; display:inline-block; }
+.numplay .inner ul li .num .numCont .lottobol dl dd { float:left; border-radius:100%; background:#8f7856; color:#fff; width:45px; line-height:45px; text-align:center; margin-right:7px; }
+.numplay .inner ul li .num .numCont .lottobol dl dd:nth-child(7) { background:none; color:#444; }
+.numplay .inner ul li .num .numCont .lottotable { width:100%; text-align:center; margin-top:8px; }
+.numplay .inner ul li .num .numCont .lottotable tr:first-child td { font-size:15px; color:#1d1d1d; }
+.numplay .inner ul li .num .numCont .lottotable tr td { font-size:16px; color:#444; }
+.numplay .inner ul li .num .numCont .lottotable tr td:last-child { text-align:right; }
+.numplay .inner ul li .play .lottoPlay { background:url('../_img/lotto_play.png') no-repeat 50% 50%; width:100%; height:200px; margin-top:10px; cursor:pointer; }
+.numplay .inner ul li .play .maintit { font-size:18px; font-weight:600; }
+
+
+/*로또첼린지 - 당첨실적 + 당첨후기*/
+.gdnum_review { padding:3em 0; }
+.gdnum_review .inner ul { overflow:hidden; }
+.gdnum_review .inner ul li { float:left; width:70%; padding:1em; box-sizing:border-box;}
+.gdnum_review .inner ul li.gdnum { margin-right:1%; width:29%; background:#f5c647; }
+.gdnum_review .inner ul li.gdnum p { text-align:center; font-weight:600; font-size:25px; letter-spacing:-2px; padding-bottom:9px;}
+.gdnum_review .inner ul li.gdnum p span { color:#ff4700; }
+.gdnum_review .inner ul li.gdnum ul { overflow:hidden; margin-top:5.7px; background:#fff; }
+.gdnum_review .inner ul li.gdnum ul.numberone { background:#2a2a2a; }
+.gdnum_review .inner ul li.gdnum ul.numberone li { color:#fff; }
+.gdnum_review .inner ul li.gdnum ul li { float:left; width:41%; padding:.7em; color:#2a2a2a; }
+.gdnum_review .inner ul li.gdnum ul li:nth-child(1) { background:url('../_img/award.png') no-repeat 50% 50%; width:18%; font-size:13px; text-align:center; line-height:28px; }
+.gdnum_review .inner ul li.review { background:#2a2a2a; overflow:hidden; }
+.gdnum_review .inner ul li.review p { text-align:center; font-weight:600; font-size:25px; letter-spacing:-1.5px; color:#fff;  vertical-align:middle; padding-bottom:10px; border-bottom:2px solid #f4c782; }
+.gdnum_review .inner ul li.review p img { vertical-align:sub; margin-right:3px; }
+.gdnum_review .inner ul li.review dl { overflow:hidden; margin-top:13px; width:100%; display:table; table-layout:fixed;}
+.gdnum_review .inner ul li.review dd { float:left; width:33.3%; display:table-cell; vertical-align:middle; text-align:center; position:relative; }
+.gdnum_review .inner ul li.review dd .txt { width:253px; background:rgba(28,28,28,0.8); padding:10px; box-sizing:border-box; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; position:absolute; bottom:5px; left:5px; color:#fff; }
+.gdnum_review .inner ul li.review dd:hover .txt { background:rgba(255,255,255,0.7); color:#000; transition:1s; }
+
+/*로또첼린지 - 로또조합시스템 설명*/
+.lotto_intro { background:url('../_img/intro_bg.png') no-repeat; height:410px;  padding:2.6em 0; }
+.lotto_intro .inner ul li { float:left; text-align:center; font-size:19px; color:#daf5ff; }
+.lotto_intro .inner ul li img { padding-top:2.1em; }
+.lotto_intro .inner ul li .tit { font-size:32px; font-weight:600; color:#fff;}
+.lotto_intro .inner ul li .subtit { margin-bottom:2em; }
+.lotto_intro .inner ul li span.yellowfont { color:#f5c647; }
+.lotto_intro .inner ul li span.skybluefont { color:#61f4fd; }
+
+.lotto_intro .inner ul li:nth-child(2) { width:62%; float:right; }
+.lotto_intro .inner ul li dl { overflow:hidden; background:rgba(255,255,255,0.5); border-radius:40px; margin-top:20px; }
+.lotto_intro .inner ul li dd { float:left; }
+.lotto_intro .inner ul li dd:nth-child(2) {float:left; width:87.3%;}
+.lotto_intro .inner ul li dd .img01 { width:80px; height:80px; border-radius:100%; background:url('../_img/intro_img01.png') no-repeat 50% 50% #f5c647; }
+.lotto_intro .inner ul li dd .img02 { width:80px; height:80px; border-radius:100%; background:url('../_img/intro_img02.png') no-repeat 50% 50% #f5c647; }
+.lotto_intro .inner ul li dd .img03 { width:80px; height:80px; border-radius:100%; background:url('../_img/intro_img03.png') no-repeat 50% 50% #f5c647; }
+.lotto_intro .inner ul li dd p { text-align:left; font-size:17px; color:#fff; padding:.8em 1em;}
+
+
+/*로또첼린지 - 후기*/
+.review { padding:3em 0; background:#f4f4f4; }
+.review .inner .tit { font-size:27px; font-weight:600; text-align:center; margin-bottom:1.5em;}
+.review .inner ul { overflow:hidden; }
+.review .inner ul li { float:left; background:#fff; width:19%; margin-right:1%; }
+.review .inner ul li .comm_tit { color:#363728; font-weight:600; padding:.8em 1em .5em 1em; font-size:19px; line-height:24px; }
+.review .inner ul li .comm_txt { margin:0 1em 1em 1em; font-size:15px; color:#444; line-height:20px; max-height:100px; box-sizing:border-box; overflow:hidden; }
+.review .inner ul li .veiwnum { padding:.4em .5em; background:#f5c647; color:#796836; font-size:15px; }
+
+
+/*로또첼린지 - 브랜드*/
+.brand ul { overflow:hidden; }
+.brand ul li { float:left; padding:2.5em 0em; width:20%; text-align:center; }
+.brand img { max-width: 80%; max-height: 40px; vertical-align: middle; }
+
+
+/*로또첼린지 - 풋터*/
+footer { background:#222222; padding:1em 0 2em 0; }
+footer ul { overflow:hidden; margin:1em 0;  }
+footer ul li { float:left; padding-right:1em; }
+footer ul li a,footer p { color:#e8c685; font-size:14px; }
+footer .capyright { font-size:11px; margin-top:1em; color:#e8c685; }
+footer .inner { position:relative; }
+footer img { position:absolute; top:50%; right:0; margin-top:-15px; }
+
+
+/*css animation*/
+@-webkit-keyframes kenburns-top {
+  0% {
+
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+
+  }
+  100% {
+
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+
+  }
+}
+@keyframes kenburns-top {
+  0% {
+
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+
+  }
+  100% {
+
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+
+  }
+}

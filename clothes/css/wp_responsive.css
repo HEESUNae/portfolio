@@ -1,0 +1,107 @@
+/**
+ * Created by PhpStorm.
+ * Date         : 2021-11-12
+ * Developer    : SeHwan Hwang
+ * Description  : wp_responsive.css
+ * ⓒ 2021. WebPlanet Co. All Rights Reserved.
+ */
+
+@charset "utf-8";
+
+/**********************************************************************************************************************/
+/* 작성방법 */
+/*
+1. 모든 스타일은 클래스명 .wp_wrap 을 시작으로 작성한다.
+2. 공통 스타일의 클래스명은 cm_ 접두어를 사용한다.
+ */
+/**********************************************************************************************************************/
+
+@media (max-width: 1400px) {
+/**********************************************************************************************************************/
+/* 공통 */
+/**********************************************************************************************************************/
+.wp_wrap .cm_inner { width: 1200px; }
+/**********************************************************************************************************************/
+
+
+}
+
+
+@media (max-width: 1200px) {
+/**********************************************************************************************************************/
+/* 공통 */
+/**********************************************************************************************************************/
+.wp_wrap .cm_inner { width: 100%; }
+/**********************************************************************************************************************/
+
+/**********************************************************************************************************************/
+/* 메인 */
+/**********************************************************************************************************************/
+/* 헤더 */
+.wp_wrap .pc_header { display: none; }
+.wp_wrap .mobile_header { display: flex; }
+
+/* 메인 - 메인슬라이드01 */
+.wp_wrap .main_sec01 { padding: 50px 0 0; }
+
+/* 메인 - 메인슬라이드02 */
+.wp_wrap .main_sec02 { padding: 70px 0; }
+.wp_wrap .main_sec02 .main_slide02 .swiper-container02 { margin: 0 50px; }
+.wp_wrap .main_sec02 .main_slide02_prev { left: 15px; }
+.wp_wrap .main_sec02 .main_slide02_next { right: 15px; }
+
+/* 메인 - new arrival */
+.wp_wrap .main_sec03 { padding: 70px 35px 50px; background: #fafafa; }
+
+/* 풋터 */
+.wp_wrap footer .cm_inner { padding: 40px 50px 45px; }
+.wp_wrap footer .company_number { order:2; }
+.wp_wrap footer .footer_utill { order:1; justify-content: flex-start; margin-bottom: 50px; }
+/**********************************************************************************************************************/
+
+}
+
+
+@media (max-width: 992px) {
+
+}
+
+
+@media (max-width: 768px) {
+.wp_wrap .main_sec01 { padding: 50px 0 0; }
+.wp_wrap .main_sec01 .swiper-container01 .swiper-horizontal>.swiper-pagination-bullets,
+.wp_wrap .main_sec01 .swiper-container01 .swiper-pagination-bullets.swiper-pagination-horizontal { bottom: 20px; }
+.wp_wrap .main_sec01 .swiper-container01 .swiper-pagination-bullet { width: 7px; height: 7px; }
+
+.wp_wrap .main_sec02 { padding: 30px 0; }
+.wp_wrap .main_sec02 .main_slide02_prev { display: none; }
+.wp_wrap .main_sec02 .main_slide02_next { display: none; }
+.wp_wrap .main_sec02 .main_slide02 .swiper-container02 { margin: 0 15px; }
+.wp_wrap .main_sec02 .main_slide02 .swiper-container02 h2 { font-size: 1.4rem; margin-bottom: 7px; }
+
+.wp_wrap .main_sec03 { padding: 30px 11px; }
+.wp_wrap .main_sec03 h1 { font-size: 1.2rem; line-height: 1; height: auto; margin-bottom: 26px; }
+
+.wp_wrap #wp_skin02 ul li { padding: 4px; }
+.wp_wrap #wp_skin02 ul li .txt { padding: 10px 0 12px;}
+.wp_wrap #wp_skin02 ul li .txt .ico_wrapper div { margin-right: 3px; }
+
+.wp_wrap footer .cm_inner { padding: 45px 15px; }
+.wp_wrap footer .footer_utill { font-size: 1.2rem; margin-bottom: 45px;  }
+.wp_wrap footer .footer_utill li a { font-size: 1.2rem; color: #282828; }
+.wp_wrap footer .info:nth-child(3) { padding: 30px 0 15px 0;}
+
+.wp_wrap footer .info:nth-child(3) p br { display: block; }
+}
+
+
+@media (max-width: 576px) {
+.wp_wrap .main_sec01 .swiper-container01 .swiper-horizontal>.swiper-pagination-bullets,
+.wp_wrap .main_sec01 .swiper-container01 .swiper-pagination-bullets.swiper-pagination-horizontal { bottom: 10px; }
+.wp_wrap .main_sec02 .main_slide02 .swiper-container02 h2 { font-size: 1.2rem; }
+/* .wp_wrap footer .info:nth-child(3) { word-break: keep-all; }
+.wp_wrap footer .info:nth-child(3) p span { display: block; }
+.wp_wrap footer .info:nth-child(3) p br { display: none; } */
+.wp_wrap #wp_skin02 ul li .txt .ico_wrapper div { font-size: 11px; }
+
+}

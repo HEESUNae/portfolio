@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/wp_reset.css">
+  <link rel="stylesheet" href="../css/wp_grid.css">
+  <link rel="stylesheet" href="../css/wp_style.css?after">
+  <link rel="stylesheet" href="../css/wp_responsive.css">
+  <link rel="stylesheet" href="../css/swiper.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/script.js?after"></script>
+  <title>플래닛옷장</title>
+</head>
+<body>
+  <div id="wrap" class="wp_wrap">
+    <!-- pc버전 헤더 -->
+    <header class="pc_header">
+      <div class="cm_inner pdt40">
+        <ul class="header_top">
+          <li><a href="#">q&a</a></li>
+          <li><a href="#">review</a></li>
+          <li><a href="#">notice</a></li>
+          <li><a href="#">delivery</a></li>
+          <li><button class="search_btn"><i class="xi-search"></i></button></li>
+        </ul>
+
+        <div class="logo_wrapper wp_row">
+          <div class="logo wp_col_md-2">
+            <a href="#"><span>플</span>래닛<span>옷</span>장</a>
+          </div>
+          <ul class="utill wp_col_md-10">
+            <li><a href="#">login</a></li>
+            <li><a href="#">join</a> <div class="cupon_ico">2000</div></li>
+            <li><a href="#">cart</a></li>
+            <li><a href="#">order</a></li>
+            <li><a href="#">my page</a></li>
+          </ul>
+        </div>
+
+        <div class="nav_wrapper wp_row">
+          <nav class="wp_col_md-11">
+            <ul>
+              <li><a href="#">best</a></li>
+              <li><a href="#">outer</a></li>
+              <li><a href="#">shirts & blouse</a></li>
+              <li><a href="#">pants</a></li>
+              <li><a href="#">jean</a></li>
+              <li><a href="#">skirt & dres</a></li>
+              <li><a href="#">shoes</a></li>
+              <li><a href="#">bag</a></li>
+              <li><a href="#">acc</a></li>
+              <li><a href="#" class="cm_color01">sale</a></li>
+            </ul>
+          </nav>
+          <div class="sns wp_col_md-1">
+            <div class="kakao"><a href="#"><i class="xi-kakaotalk"></i></a></div>
+            <div class="insta mgl5"><a href="#"><i class="xi-instagram"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- //pc버전 헤더 -->
+
+    <!-- 모바일 헤더 -->
+    <header class="mobile_header wp_row">
+      <button class="hamberger wp_col-2"><img src="../img/menu.png" alt="메뉴"></button>
+      <div class="logo wp_col-8">
+        <a href="#"><span>플</span>래닛<span>옷</span>장</a>
+      </div>
+      <div class="sns wp_col-2">
+        <div class="cart"><a href="#"><i class="xi-cart-o"></i></a></div>
+        <div class="search mgl10"><button><i class="xi-search"></i></button></div>
+      </div>
+    </header>
+    <!-- //모바일 헤더 -->
+
+    <div class="moblie_navi_wrap">
+      <div class="moblie_mask"></div>
+      <div class="mobile_navi">
+        <div class="colse_wrapper">
+          <button type="button" class="close_btn"><i class="xi-close"></i></button>
+        </div>
+        <div class="navi_list_wrapper">
+          <div class="navi_list">
+            <ul>
+              <li>
+                <a href="javascript:void(0);" id="ham_menu01">best</a>
+                <ul class="ham_menu01">
+                  <li><a href="#">coat</a></li>
+                  <li><a href="#">jacket</a></li>
+                  <li><a href="#">jumper</a></li>
+                  <li><a href="#">vest</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0);" id="ham_menu02">outer</a>
+                <ul class="ham_menu02">
+                  <li><a href="#">coat</a></li>
+                  <li><a href="#">jacket</a></li>
+                  <li><a href="#">jumper</a></li>
+                  <li><a href="#">vest</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript:void(0);" id="ham_menu03">top</a>
+                <ul class="ham_menu03">
+                  <li><a href="#">coat</a></li>
+                  <li><a href="#">jacket</a></li>
+                  <li><a href="#">jumper</a></li>
+                  <li><a href="#">vest</a></li>
+                </ul>
+              </li>
+              <li><a href="#">shirts & blouse</a></li>
+              <li><a href="#">knit & caridigan</a></li>
+              <li><a href="#">pants</a></li>
+              <li><a href="#">jean</a></li>
+              <li><a href="#">skirt & dress</a></li>
+              <li><a href="#">basic</a></li>
+              <li><a href="#">shoes</a></li>
+              <li><a href="#">bag</a></li>
+              <li><a href="#">accesory</a></li>
+            </ul>
+          </div>
+
+          <div class="navi_list">
+            <ul>
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">마이페이지</a></li>
+              <li><a href="#">장바구니</a></li>
+              <li><a href="#">주문내역</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Q&A</a></li>
+              <li><a href="#">리뷰</a></li>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">배송조회</a></li>
+              <li><a href="#">최근본상품</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contents">
+      <!-- 메인슬라이드01 -->
+      <section class="main_sec01">
+        <div class="cm_inner">
+          <div class="main_slide01 swiper-container01">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../img/test_main_slide01.jpg" alt="메인슬라이드01">
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/test_main_slide01.jpg" alt="메인슬라이드02">
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/test_main_slide01.jpg" alt="메인슬라이드03">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- //메인슬라이드01 -->
+
+      <!-- //메인슬라이드02 -->
+      <section class="main_sec02">
+        <div class="cm_inner">
+          <div class="main_slide02">
+            <button class="main_slide02_prev"><img src="../img/main_slide02_arrow.png" alt="이전"></button>
+            <button class="main_slide02_next"><img src="../img/main_slide02_arrow.png" alt="다음"></button>
+
+            <div class="swiper-container02">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <h2 class="cm_font01">shoes on</h2>
+                    <div class="wp_frame">
+                      <img src="../img/test_main_slide02_img01.jpg" alt="신발">
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <h2 class="cm_font01">season off sale</h2>
+                    <div class="wp_frame">
+                      <img src="../img/test_main_slide02_img02.jpg" alt="winter sale">
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <h2 class="cm_font01">best item</h2>
+                    <div class="wp_frame">
+                      <img src="../img/test_main_slide02_img03.jpg" alt="선물들고 기뻐하는 여자">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- //메인슬라이드02 -->
+
+      <!-- new_arrival -->
+      <section class="main_sec03">
+        <div class="cm_inner">
+          <h1>new arrival</h1>
+          <div id="wp_skin02">
+            <ul class="wp_row">
+
+              <li class="wp_col_xl-3 wp_col_sm-4 wp_col-6">
+                <div class="wp_frame">
+                  <img src="../img/test_product01.jpg" alt="">
+                </div>
+
+                <div class="txt">
+                  <h3 class="title ellipsis2">mtm t-shirts</h3>
+                  <p class="price_cost">20,000</p>
+                  <p class="price_sale">19,800</p>
+                  <p class="article ellipsis2">
+                    좋은 소재의 순면으로 편안한 컬러로 어떤 옷에도 어울리게 입을수 있어요
+                  </p>
+
+                  <div class="ico_wrapper">
+                    <div class="sale">sale</div>
+                    <div class="new">new</div>
+                    <div class="best">best</div>
+                    <div class="rcmd cm_color01"><i class="xi-heart"></i>추천</div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="wp_col_xl-3 wp_col_sm-4 wp_col-6">
+                <div class="wp_frame">
+                  <img src="../img/test_product01.jpg" alt="">
+                </div>
+                <div class="txt">
+                  <h3 class="title ellipsis2">mtm t-shirts</h3>
+                  <p class="price_cost">20,000</p>
+                  <p class="price_sale">19,800</p>
+                  <p class="article ellipsis2">
+                    좋은 소재의 순면으로 편안한 컬러로 어떤 옷에도 어울리게 입을수 있어요
+                  </p>
+                  <div class="ico_wrapper">
+                    <div class="sale">sale</div>
+                    <div class="new">new</div>
+                    <div class="best">best</div>
+                    <div class="rcmd cm_color01"><i class="xi-heart"></i>추천</div>
+                  </div>
+                </div>
+              </li>
+              <li class="wp_col_xl-3 wp_col_sm-4 wp_col-6">
+                <div class="wp_frame">
+                  <img src="../img/test_product01.jpg" alt="">
+                </div>
+
+                <div class="txt">
+                  <h3 class="title ellipsis2">mtm t-shirts</h3>
+                  <p class="price_cost">20,000</p>
+                  <p class="price_sale">19,800</p>
+                  <p class="article ellipsis2">
+                    좋은 소재의 순면으로 편안한 컬러로 어떤 옷에도 어울리게 입을수 있어요
+                  </p>
+
+                  <div class="ico_wrapper">
+                    <div class="sale">sale</div>
+                    <div class="new">new</div>
+                    <div class="best">best</div>
+                    <div class="rcmd cm_color01"><i class="xi-heart"></i>추천</div>
+                  </div>
+                </div>
+              </li>
+              <li class="wp_col_xl-3 wp_col_sm-4 wp_col-6">
+                <div class="wp_frame">
+                  <img src="../img/test_product01.jpg" alt="">
+                </div>
+
+                <div class="txt">
+                  <h3 class="title ellipsis2">mtm t-shirts</h3>
+                  <p class="price_cost">20,000</p>
+                  <p class="price_sale">19,800</p>
+                  <p class="article ellipsis2">
+                    좋은 소재의 순면으로 편안한 컬러로 어떤 옷에도 어울리게 입을수 있어요
+                  </p>
+
+                  <div class="ico_wrapper">
+                    <div class="sale">sale</div>
+                    <div class="new">new</div>
+                    <div class="best">best</div>
+                    <div class="rcmd cm_color01"><i class="xi-heart"></i>추천</div>
+                  </div>
+                </div>
+              </li>
+              <li class="wp_col_xl-3 wp_col_sm-4 wp_col-6">
+                <div class="wp_frame">
+                  <img src="../img/test_product01.jpg" alt="">
+                </div>
+
+                <div class="txt">
+                  <h3 class="title ellipsis2">mtm t-shirts</h3>
+                  <p class="price_cost">20,000</p>
+                  <p class="price_sale">19,800</p>
+                  <p class="article ellipsis2">
+                    좋은 소재의 순면으로 편안한 컬러로 어떤 옷에도 어울리게 입을수 있어요
+                  </p>
+
+                  <div class="ico_wrapper">
+                    <div class="sale">sale</div>
+                    <div class="new">new</div>
+                    <div class="best">best</div>
+                    <div class="rcmd cm_color01"><i class="xi-heart"></i>추천</div>
+                  </div>
+                </div>
+              </li>
+              <li class="wp_col_xl-3 wp_col_sm-4 wp_col-6">
+                <div class="wp_frame">
+                  <img src="../img/test_product01.jpg" alt="">
+                </div>
+
+                <div class="txt">
+                  <h3 class="title ellipsis2">mtm t-shirts</h3>
+                  <p class="price_cost">20,000</p>
+                  <p class="price_sale">19,800</p>
+                  <p class="article ellipsis2">
+                    좋은 소재의 순면으로 편안한 컬러로 어떤 옷에도 어울리게 입을수 있어요
+                  </p>
+
+                  <div class="ico_wrapper">
+                    <div class="sale">sale</div>
+                    <div class="new">new</div>
+                    <div class="best">best</div>
+                    <div class="rcmd cm_color01"><i class="xi-heart"></i>추천</div>
+                  </div>
+                </div>
+              </li>
+              <li class="wp_col_xl-3 wp_col_sm-4 wp_col-6">
+                <div class="wp_frame">
+                  <img src="../img/test_product01.jpg" alt="">
+                </div>
+
+                <div class="txt">
+                  <h3 class="title ellipsis2">mtm t-shirts</h3>
+                  <p class="price_cost">20,000</p>
+                  <p class="price_sale">19,800</p>
+                  <p class="article ellipsis2">
+                    좋은 소재의 순면으로 편안한 컬러로 어떤 옷에도 어울리게 입을수 있어요
+                  </p>
+
+                  <div class="ico_wrapper">
+                    <div class="sale">sale</div>
+                    <div class="new">new</div>
+                    <div class="best">best</div>
+                    <div class="rcmd cm_color01"><i class="xi-heart"></i>추천</div>
+                  </div>
+                </div>
+              </li>
+              <li class="wp_col_xl-3 wp_col_sm-4 wp_col-6">
+                <div class="wp_frame">
+                  <img src="../img/test_product01.jpg" alt="">
+                </div>
+
+                <div class="txt">
+                  <h3 class="title ellipsis2">mtm t-shirts</h3>
+                  <p class="price_cost">20,000</p>
+                  <p class="price_sale">19,800</p>
+                  <p class="article ellipsis2">
+                    좋은 소재의 순면으로 편안한 컬러로 어떤 옷에도 어울리게 입을수 있어요
+                  </p>
+
+                  <div class="ico_wrapper">
+                    <div class="sale">sale</div>
+                    <div class="new">new</div>
+                    <div class="best">best</div>
+                    <div class="rcmd cm_color01"><i class="xi-heart"></i>추천</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- //new_arrival -->
+
+      <footer>
+        <div class="cm_inner">
+          <div class="wp_row mgb20">
+            <div class="company_number wp_col_xl-2 wp_col_sm-12">
+              <a href="tel:1644-1078">1644-1078</a>
+            </div>
+            <ul class="footer_utill wp_col_xl-10 wp_col_sm-12">
+              <li><a href="#">company</a></li>
+              <li><a href="#">agreement</a></li>
+              <li><a href="#">privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="info">
+            <p>업무시간 MON-FRI 10:00 - 17:00 LUNCH 1:00 - 2:00</p>
+            <p><span>농협 : 123-02-1232323</span><span>우리 : 100-00-232300</span></p>
+            <p>예금주 : 웹플래닛</p>
+          </div>
+          <div class="info">
+            <p>
+              <span>웹플래닛</span><span>대표 : 송범진</span>
+              <span>개인정보관리책임자 : 황제환</span><br/>
+              <span>고객센터 : <a href="tel:1644-1075">1644-1078</a></span>
+              <span>메일 : <a href="mailto:wpl.co.kr">wpl.co.kr</a></span>
+            </p>
+            <p>
+              <span>경기도 부천시 조마루로 385번길 92, 부천테크노밸리 u1센터<br/> 16층, 1616호</span>
+              <span>통신판매 : 2020-경기부천-2020</span>
+            </p>
+            <p>
+              <span>교환반품주소 : 경기도 부천시 부흥로 315 물류창고</span>
+            </p>
+          </div>
+          <p>Copyright (c) webplanet. All right reserved</p>
+        </div>
+
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

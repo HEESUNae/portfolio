@@ -1,0 +1,387 @@
+@font-face { font-family: 'YiSunShinDotumM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YiSunShinDotumM.woff') format('woff'); font-weight: normal; font-style: normal; }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/*다이쏘 전체공통*/
+li { list-style:none; }
+a{ text-decoration:none; }
+body,ul,p { font-family: "Noto Sans KR"; margin:0; padding:0; letter-spacing:-1px; }
+input,button { font-family: "Noto Sans KR"; }
+.inner { width:1200px; margin:0 auto; }
+
+#wrap { overflow:hidden; }
+
+/*체크박스 css*/
+.checks { margin:.5em 0 1em 0; }
+.checks input[type="checkbox"] { display:none; }
+.checks input[type="checkbox"] + label { width:14px; height:14px; padding-left:20px; font-size:15px; cursor:pointer; background:url('../_img/ico_check2_off.png') no-repeat 0% 50%; }
+.checks input[type="checkbox"]:checked + label { cursor:pointer; background:url('../_img/ico_check2_on.png') no-repeat 0% 50%; }
+
+/*다이쏘 헤더*/
+header { border-bottom:3px solid #ff0303; }
+header .headerWrap { padding:.7em 0; overflow:hidden; }
+header .headerWrap .logo {width:180px; height:52px; background:url('../_img/toplogo.png') no-repeat; float:left; }
+header .headerWrap .orderMake { float:right; }
+header .headerWrap .orderMake ul { padding:0.7em 1.3em 0 0; overflow:hidden; float:left; }
+header .headerWrap .orderMake ul li { float:left; }
+header .headerWrap .orderMake ul li input { margin:0 .5em; padding:0 10px; width:210px; height:35px; border-radius:20px; border-color:#000; }
+header .headerWrap .orderMake ul li input:focus { border:2px solid #d72d00; transition:.5s; }
+header .headerWrap .orderMake ul li input::placeholder { color:#888; font-family: "Noto Sans KR"; }
+header .headerWrap .orderMake ul li button { padding:.6em 1.5em; border-radius:20px; background:#e80b0b; color:#fff; font-weight:600; border:0; cursor:pointer; }
+header .headerWrap .orderMake ul li button:hover { background:#000; transition:.5s;}
+header .headerWrap .callArea { float:right; text-align:right; margin-right:5px;}
+header .headerWrap .callArea p { font-size:13px; }
+header .headerWrap .callArea .callNumber a { font-size:28.5px; color:#e80b0b; line-height:32px; font-weight:600; font-family: 'Poppins', sans-serif;}
+header .headerWrap .wid600 { display:none; }
+
+/*다이쏘 컨텐츠 공통*/
+.contents .inner { margin:5em auto; }
+.inner .tit { text-align:center; }
+
+/*다이쏘 컨텐츠 메인배너*/
+.mainBanner { width:100%; position:relative; overflow:hidden;}
+.mainBanner ul { overflow:hidden; }
+.mainBanner ul li { float:left; width:50%; }
+.mainBanner .mainbnr_cont { width:27%; position:absolute; top:13%; left:19%; }
+.mainBanner .bnr_twinkle { width:30%; position:absolute; top:0; right:19%; }
+.mainBanner .product_img { width:28%; position:absolute; bottom:3%; right:21%; }
+.mainBanner img,.subBanner img { width:100%; height:100%; }
+
+.subBanner { margin:0 auto; width:100%; margin-top:20px; } 
+
+/*다이쏘 컨텐츠 이용방법*/
+.gaide .inner .tit p {font-size:17px; margin-top:7px !important; }
+.gaide .inner ul { margin-top:7em; border-top:3px solid #da0a17; padding-top:8px;}
+.gaide .inner ul li { width:19.9%; padding:2.5em 0 1.5em 0; border-right:1px solid #ddd;border-top:1px solid #ddd;border-bottom:1px solid #ddd; font-size:20px; text-align:center; float:left; position: relative; }
+.gaide .inner ul li:first-child { border-left:1px solid #ddd; }
+.gaide .inner ul li .StepImg { width:100px; height:100px; border-radius:100%; position:absolute; top:-3em; left:30%; }
+.gaide .inner ul li:nth-child(1) .StepImg { background:url('../_img/user_icon01.png') no-repeat #da0a17; background-position:50% 50%; }
+.gaide .inner ul li:nth-child(2) .StepImg { background:url('../_img/user_icon02.png') no-repeat #da0a17; background-position:55% 55%; }
+.gaide .inner ul li:nth-child(3) .StepImg { background:url('../_img/user_icon03.png') no-repeat #da0a17; background-position:53% 50%; }
+.gaide .inner ul li:nth-child(4) .StepImg { background:url('../_img/user_icon04.png') no-repeat #da0a17; background-position:50% 50%; }
+.gaide .inner ul li:nth-child(5) .StepImg { background:url('../_img/user_icon05.png') no-repeat #da0a17; background-position:50% 50%; }
+.gaide .inner ul li .StepCont { color:#da0a17; font-size:23px; font-weight:600; letter-spacing:-1.5px; }
+.gaide .inner ul li p { font-weight:600; }
+
+/*다이쏘 컨텐츠 설치사례*/
+.makeReview { margin-top:17em; padding:4em 0; background:url('../_img/review_bg.png') no-repeat; background-size:cover; }
+.makeReview .reviewBox { padding:2em; margin-top:3em; background:#fff; border-top:3px solid #000; }
+.makeReview .reviewBox:first-child { margin-top:4em; }
+.makeReview .reviewBox .reviewTit { color:#da0a17; font-size:28px; font-weight:600; font-family:YiSunShinDotumM; }
+.makeReview .reviewBox .tit { font-size:26px; margin-bottom:.5em; text-align:left; font-weight:600; letter-spacing:-1.5px; }
+.makeReview .reviewBox .cont ul { padding-top:1.3em; border-top:1px solid #ddd; overflow:hidden; }
+.makeReview .reviewBox .cont ul li {background:#eee; width:32.6%; height:280px; margin-right:1%; float:left; }
+.makeReview .reviewBox .cont ul li:last-child { margin:0; }
+.makeReview .reviewBox .cont ul li img { width:100%; height:100%; }
+.makeReview .reviewBox .cont .starArea { padding:1.3em 0 0 0; }
+.makeReview .reviewBox .cont p.txt { font-size:20px; line-height:27px; color:#333; }
+.makeReview .reviewBox .cont p.txt span { background:#fed9db; color:#000; }
+
+/*다이쏘 컨텐츠 상담신청*/
+.chatArea { background:url('../_img/chat_bg.png') no-repeat 50% 100%; padding:4em 0 3em 0; text-align:center; }
+.chatArea .inner .orderMake ul { margin-top:2em; overflow:hidden; display:inline-block; }
+.chatArea .inner .orderMake ul li { float:left; }
+.chatArea .inner .orderMake ul li input {height:35px; font-size:15px; margin:0 .5em; padding:0 10px; width:200px; border-radius:20px; border-color:#000; }
+.chatArea .inner .orderMake ul li input:focus { border:2px solid #d72d00; transition:.5s; }
+.chatArea .inner .orderMake ul li input::placeholder { color:#888; font-family: "Noto Sans KR"; }
+.chatArea .inner .callNumber { margin:1em 0; }
+.chatArea .inner .callNumber a {font-size:33px; color:#e80b0b; line-height:32px; font-weight:600; font-family: 'Poppins', sans-serif;}
+.chatArea .inner button { font-size:18px; padding:.5em 4em; border-radius:30px; background:#e80b0b; color:#fff; font-weight:600; border:0; cursor:pointer; }
+.chatArea .inner button:hover { background:#000; transition:.5s;}
+
+
+/*다이쏘 컨텐츠 상담리스트*/
+.chatList { background:#f2f2f2; }
+.chatList .inner .tit { padding:5em 0 4em 0; }
+.chatList .inner .listTits { border-top:3px solid #fe0311; background:#fff; overflow:hidden; }
+.chatList .inner .listTits > div { font-size:17px; font-weight:600; line-height:55px; border-bottom:1px solid #ddd; float:left; text-align:center; }
+
+.chatList .inner { padding-bottom:4em; }
+.chatList .inner ul { overflow:hidden; background:#fff; border-bottom:1px solid #ddd; }
+.chatList .inner ul li { float:left; text-align:center; line-height:55px; font-weight:500; font-size:16px; }
+
+.chatList .inner .listTit01 { width:10%; }
+.chatList .inner .listTit02 { width:15%; }
+.chatList .inner .listTit03 { width:60%; }
+.chatList .inner .listTit04 { width:15%; text-align:center;}
+.chatList .inner .listTit04 .ingIcon { width:100px; font-size:14px; margin:.9em auto; line-height:30px; background:#e83202; color:#fff; border-radius:30px; }
+.chatList .inner .listTit04 .endIcon { width:100px; font-size:14px; margin:.9em auto; line-height:30px; background:#222; color:#fff; border-radius:30px; }
+
+/*고정바*/
+.fixedChat { border-radius:20px 20px 0 0; border:2px solid #000; overflow:hidden; position:fixed; bottom:0; background:#fff;  left:calc(50% - 600px); margin:0 auto; }
+.fixedChat .inner ul { overflow:hidden;  }
+.fixedChat .inner ul li,.fixedChat .inner dt,.fixedChat .inner dl { float:left; }
+.fixedChat .inner ul li:first-child { background:#da0a17; padding:2em 2em 1em 2em;}
+.fixedChat .inner ul li .callNumber { color:#fff; font-size:38px; font-weight:600; font-family: 'Poppins', sans-serif;}
+.fixedChat .inner ul li:nth-child(2) { padding:1.7em 2em 0 2em; }
+.fixedChat .inner ul li:nth-child(2) .orderTit { overflow:hidden; margin-bottom:15px; }
+.fixedChat .inner ul li:nth-child(2) .orderTit img { float:left; }
+.fixedChat .inner ul li:nth-child(2) .orderTit .checks { float:left; margin:0 0 0 10px;}
+
+.fixedChat .inner ul li input { font-size:15px; margin:0 .5em; padding:1.3em 1em; width:270px; border-radius:20px; border-color:#000; }
+.fixedChat .inner ul li input:focus { border:2px solid #d72d00; transition:.5s; }
+.fixedChat .inner ul li input::placeholder { color:#888; font-family: "Noto Sans KR"; }
+.fixedChat .inner button { letter-spacing:-1.5px; font-size:18px; padding:.5em 4em; border-radius:30px; background:#000; color:#fff; font-weight:600; border:0; cursor:pointer; float:left; }
+.fixedChat .inner button:hover { background:#e80b0b; transition:.5s;}
+
+/*footer*/
+footer { overflow:hidden; }
+footer .inner .logo { width:180px; height:52px; background:url('../_img/toplogo.png') no-repeat; float:left; margin-top:2.5em; }
+footer .inner .txt { float:left; font-size:13px; padding: 2em;}
+footer .inner .footTime { text-align:right; float:right; font-size:12px; line-height:16px;}
+footer .inner .footTime .callArea .callNumber { font-size:28.5px; color:#e80b0b; line-height:32px; font-weight:600; font-family: 'Poppins', sans-serif;}
+footer .inner { overflow:hidden; }
+footer .inner > div { float:left; }
+footer .inner .footTime h3 { margin-bottom:0; }
+
+@media screen and (max-width:1200px) {
+	.inner { width:1000px; }
+	.subBanner { margin-top:5px; }
+	.mainBanner .mainbnr_cont { width:30%; top:11%; left:12%; }
+	.mainBanner .bnr_twinkle { right:12%; }
+	.mainBanner .product_img { right:14%; }
+	.contents .inner { margin:3em auto; }
+	.gaide .inner ul li { width:19.8%; }
+	.makeReview { margin-top:13em; }
+	.chatArea { padding:3.5em 0; }
+	.chatList .inner .tit { padding:3.5em 0 2.5em 0; }
+	footer .inner { overflow:hidden; }
+	footer .inner > div { float:left; }
+	footer .inner .logo { margin-top:2.5em; padding:0; }
+	footer .inner .txt  { margin:0; }
+	footer .inner .footTime { margin-top:0; float:right; font-size:12px; line-height:16px; }
+	footer .inner .footTime h3 { margin-bottom:0; }
+
+	.fixedChat { left:calc(50% - 500px); }
+	.fixedChat .inner ul li > img { width:210px; }
+	.fixedChat .inner ul li .callNumber { font-size:34px; }
+	.fixedChat .inner button { padding:.5em 3em; font-size: 16px;}
+	.fixedChat .inner ul li input { width:210px; padding: 1.2em 1em;}
+}
+@media screen and (max-width:1024px) {
+	.inner { width:800px; }
+	.subBanner { margin-top:5px; }
+	.mainBanner .mainbnr_cont { width:32%; top:13%; left:12%; }
+	.mainBanner .bnr_twinkle { right:12%; }
+	.mainBanner .product_img { right:14%; }
+	.tit img { width:240px; }
+
+	header .headerWrap .logo,footer .inner .logo { width:160px; background-size:160px; }
+	header .headerWrap .orderMake ul li input { width:129px; height:32px; margin: 0 .3em; }
+	header .headerWrap .orderMake ul li button { padding:.6em 1em; }
+	
+	.contents .inner { margin:3em auto; }
+
+	.gaide .inner .tit p { font-size:15px; }
+	.gaide .inner ul { margin-top:5.5em; }
+	.gaide .inner ul li { padding: 1em 0; }
+	.gaide .inner ul li .StepImg { width:80px; height:80px; left:25%; }
+	.gaide .inner ul li:nth-child(1) .StepImg { background-size:48px; }
+	.gaide .inner ul li:nth-child(2) .StepImg { background-size:45px; }
+	.gaide .inner ul li:nth-child(3) .StepImg { background-size:47px; }
+	.gaide .inner ul li:nth-child(4) .StepImg { background-size:45px; }
+	.gaide .inner ul li:nth-child(5) .StepImg { background-size:45px; }
+
+	.gaide .inner ul li .StepCont { font-size:19px; }
+	.gaide .inner ul li p { font-size:17px; }
+
+	.makeReview { margin-top:10em; padding: 3em 0;}
+	.makeReview .reviewBox { padding:1.5em; }
+	.makeReview .reviewBox .reviewTit { font-size:24px; }
+	.makeReview .reviewBox .tit { font-size:23px; margin-bottom:.4em; }
+	.makeReview .reviewBox .cont .starArea { padding:1em 0 0 0; }
+	.makeReview .reviewBox .cont p.txt { font-size:17px; line-height:24px; }
+	.makeReview .reviewBox .cont ul li { height:220px; }
+
+	.chatArea .inner > img { width:220px; }
+	.chatArea .inner .orderMake ul li img { width:35px; }
+	.chatArea .inner button { font-size:16px; }
+
+	.chatList .inner .tit { padding:3em 0; }
+	.chatList .inner .listTits > div,.chatList .inner ul li { line-height:45px; font-size: 16px; }
+	.chatList .inner .listTit04 .ingIcon,.chatList .inner .listTit04 .endIcon { margin:.6em auto; }
+	
+	footer .inner .logo { margin-top:2em; }
+	footer .inner .txt { padding:1.5em; }
+	footer .inner .footTime .callArea .callNumber { font-size:27px; }
+	footer .inner .footTime .callArea p:nth-child(3) { font-size:11px; line-height:15px; }
+
+	.fixedChat { left: calc(50% - 400px); }
+	.fixedChat .inner ul li > img { width:180px; }
+	.fixedChat .inner ul li .callNumber { font-size:27px; }
+	.fixedChat .inner ul li dl dt img { width:30px; }
+	.fixedChat .inner ul li input { padding:1em; width:170px; font-size:14px; }
+	.fixedChat .inner ul li:first-child { padding:1.5em; }
+	.fixedChat .inner ul li:nth-child(2) { padding:1.7em 2em 1em 2em; }
+	.fixedChat .inner button { font-size:14px; padding:.5em 2em; }
+	.fixedChat .inner ul li:nth-child(2) .orderTit img { width:220px; }
+	.checks input[type="checkbox"] + label { font-size:14px; }
+}
+
+@media screen and (max-width:820px) {
+	.inner { width:600px; }
+	.subBanner { margin-top:3px; }
+	.mainBanner .mainbnr_cont { width:34%; top:12%; left:16%; }
+	.tit img { width:220px; }
+
+	header .headerWrap .logo{ width:140px; background-size:140px; }
+	header .headerWrap .orderMake ul { padding:0; }
+	header .headerWrap .orderMake ul li input { width:120px; }
+	header .headerWrap .callArea .callNumber a  { font-size:27px; }
+	header .headerWrap .callArea p { font-size:12px; }
+	header .headerWrap .wid600 { display:block; }
+	header .headerWrap .orderMake .callArea { display:none; }
+	header .headerWrap .orderMake ul { padding:.5em 0; }
+	header .headerWrap .wid800 { display:none; margin:0; }
+
+	.gaide .inner ul { margin-top:2em; overflow:hidden;}
+	.gaide .inner ul li { width:33.1%; background:#fff;}
+	.gaide .inner ul li .StepImg { width:70px; height:70px; top:0; position:inherit; left:33%; }
+	.gaide .inner ul li:nth-child(4) { border-left:1px solid #ddd; }
+
+	.makeReview { margin-top:0; }
+	.makeReview .reviewBox { margin-top: 2em; }
+	.makeReview .reviewBox .reviewTit { font-size:21px; }
+	.makeReview .reviewBox .tit { font-size:21px; }
+	.makeReview .reviewBox .cont ul li { height:150px; }
+	.makeReview .reviewBox .cont p.txt { font-size:15px; line-height:21px; }
+	.makeReview .reviewBox .cont .starArea img { width:18px; }
+
+	.chatArea { background-size:400px; padding:3em 0; }
+	.chatArea .inner > img { width:200px; }
+	.chatArea .inner .orderMake ul li input { font-size:13px; }
+	.chatArea .inner button { font-size:15px; }
+	.chatArea .inner .callNumber a { line-height:25px; font-size:30px; }
+	.checks input[type="checkbox"] + label { font-size:13px; }
+
+
+	.chatList .inner .listTits > div, .chatList .inner ul li { line-height:40px; font-size:15px; line-height: 38px; }
+	.chatList .inner .listTit04 .ingIcon, .chatList .inner .listTit04 .endIcon { width:90px; margin:.4em auto; font-size:13px; }
+	.chatList .inner .listTit01 { width:15%; }
+	.chatList .inner .listTit03 { width:50%; }
+	.chatList .inner .listTit04 { width:20%; }
+	.chatList .inner { padding-bottom:3em; }
+
+	footer .inner .txt { font-size:12px; padding:1.5em 1em; margin:0; line-height: 16px;}
+	footer .inner .footTime { margin-top:.6em; }
+	footer .inner .footTime .callArea .callNumber { font-size:21px; line-height: 23px; }
+	footer .inner .footTime .callArea p:nth-child(3) { line-height: 14px; }
+	footer .inner .logo { width:140px; background-size:140px; margin-top: 2em;}
+	footer .inner .footTime h3 { margin-top:5px; }
+
+	.fixedChat { left: calc(50% - 300px); }
+	.fixedChat .inner ul li { width:100%; }
+	.fixedChat .inner ul li > img { float:left; margin:6px 0 0 1em; }
+	.fixedChat .inner ul li .callNumber { float:left; font-size:24px; padding-left:10px; }
+	.fixedChat .inner ul li:first-child { padding:.5em; }
+}
+
+@media screen and (max-width:620px) {
+	.inner { width:400px; }
+	.subBanner { margin-top:3px; }
+	.mainBanner .mainbnr_cont { width:34%; top:12%; left:16%; }
+	.tit img { width:180px; }
+	.contents .inner { margin:2em auto; }
+
+	header .headerWrap .logo, footer .inner .logo { width:120px; background-size:120px; height:35px; margin-top:4px; }
+	header .headerWrap .callArea { margin:0; display:block !important; }
+	header .headerWrap .callArea p { font-size:11px; }
+	header .headerWrap .callArea .callNumber a { font-size:21px; line-height:22px; }
+	header .headerWrap .orderMake ul { display:none; }
+	header .headerWrap button { font-size:13px; padding:.5em 1em; background:#e80b0b; color:#fff; font-weight:600; border:0; cursor:pointer; margin-top:4px; }
+	
+	.gaide .inner .tit p { font-size:13px; }
+	.gaide .inner ul { margin-top:1.5em; padding-top: 5px;}
+	.gaide .inner ul li { padding:.4em 0; width:33%; }
+	.gaide .inner ul li .StepImg { width:60px; height:60px; left:30%; }
+	.gaide .inner ul li:nth-child(1) .StepImg { background-size:38px; }
+	.gaide .inner ul li:nth-child(2) .StepImg { background-size:35px; }
+	.gaide .inner ul li:nth-child(3) .StepImg { background-size:35px; }
+	.gaide .inner ul li:nth-child(4) .StepImg { background-size:35px; }
+	.gaide .inner ul li:nth-child(5) .StepImg { background-size:35px; }
+	.gaide .inner ul li .StepCont { font-size:16px; }
+	.gaide .inner ul li p { font-size:14px; }
+	
+	.makeReview { padding:2.5em 0; }
+	.makeReview .reviewBox { padding:1em; margin-top:1.5em;}
+	.makeReview .reviewBox .reviewTit { font-size:18px; }
+	.makeReview .reviewBox .tit { font-size:17px; }
+	.makeReview .reviewBox .cont p.txt { font-size:13px; line-height:19px; }
+	.makeReview .reviewBox .cont ul { padding-top:1em; }
+	.makeReview .reviewBox .cont ul li { height:100px; }
+	.makeReview .reviewBox .cont .starArea { padding:.5em 0 0 0; }
+
+	.chatArea { padding:2.3em 0 2em 0; }
+	.chatArea .inner > img { width:180px; }
+	.chatArea .inner .orderMake ul { margin-top:1.5e }
+	.chatArea .inner .orderMake ul li input { width:130px; height:30px; }
+	.chatArea .inner .orderMake ul li img { width:30px; }
+	.chatArea .inner button { padding:.5em 3em; font-size:14px; }
+	.chatArea .inner .callNumber { margin:.5em 0; }
+
+	.chatList .inner .tit { padding:2em 0; }
+    .chatList .inner .listTits > div, .chatList .inner ul li { font-size:13px; }
+	.chatList .inner .listTit04 .ingIcon, .chatList .inner .listTit04 .endIcon { width:70px; line-height: 28px; font-size:12px; }
+
+	footer .inner .logo { padding:0; margin-top:1.2em; width:100%; background-position:50%; }
+	footer .inner .txt { padding:8px 0; width:100%; text-align:center; }
+	footer .inner .footTime .callArea { display:none; }
+	footer .inner > div { width:100%; }
+
+	.fixedChat { left: calc(50% - 200px); }
+	.fixedChat .inner ul li:nth-child(2) { padding:1.5em; }
+	.fixedChat .inner ul li:nth-child(2) .orderTit img { float:none; }
+	.fixedChat .inner ul li:nth-child(2) .orderTit .checks { float:none; margin:5px 0 0 0; }
+	.fixedChat .inner ul li input { width:139px; font-size:13px;}
+	.fixedChat .inner button { width:100%; margin-top:10px; }
+}
+
+@media screen and (max-width:420px) {
+	
+	.inner { width:375px; padding:0 1em; box-sizing:border-box;}
+	.subBanner { margin-top:3px; transform:scale(1.9); margin-top:20px;}
+	.mainBanner .mainbnr_cont { width:34%; top:12%; left:16%; }
+	.tit img { width:180px; }
+	.contents .inner { margin:2em auto; padding:0 1em;}
+
+	header .headerWrap { padding:.7em 1em; box-sizing:border-box;}
+	.mainBanner { height:310px; }
+	.mainBanner .mainbnr_cont { width:57%; top:5%; left:23%; }
+	.mainBanner .product_img { width:50%; bottom:5%; right:24%; }
+	.mainBanner .bnr_twinkle { width:82%; top:2%; bottom:30%; }
+
+	.gaide .inner { margin:2em auto 2em auto; box-sizing:border-box;}
+	.gaide .inner ul { border:0; margin-top:1em; }
+	.gaide .inner ul li { width:99%; }
+	.gaide .inner ul li .StepImg { left:0%; position:absolute; border-radius:inherit; }
+	.gaide .inner ul li .StepCont { font-size:15px; margin-left: 60px; }
+	.gaide .inner ul li p { margin-left: 60px; }
+	.gaide .inner ul li:nth-child(1n)   { border-left:1px solid #ddd; }
+
+	.makeReview { background-size:auto; }
+	.makeReview .reviewBox { border-top:2px solid #000; }
+	.makeReview .reviewBox .tit,.makeReview .reviewBox .reviewTit { font-size:15px; }
+	
+	.chatArea { background-size:350px; }
+	.chatArea .inner > img { width:150px; }
+	.chatArea .inner .callNumber a { line-height:15px; font-size:25px; }
+	.checks input[type="checkbox"] + label { font-size:12px; }
+
+	.chatList .inner { padding-bottom:2em; }
+	.chatList .inner .tit { padding:2em 0 1.5em 0; }
+	.chatArea .inner .orderMake ul li input { width:103px; }
+	.chatArea .inner button { padding:.5em 2.5em; font-size:13px; }
+	.chatList .inner .listTit04 .ingIcon, .chatList .inner .listTit04 .endIcon { width:60px; line-height:25px; }
+	.chatList .inner .listTits > div, .chatList .inner ul li { line-height:35px; font-size: 12px;}
+	.chatList .inner .listTit03 { width:171px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+	.fixedChat {left: calc(50% - 180px);     width: 350px;}
+	.fixedChat .inner { padding:0;}
+	.fixedChat .inner ul li input { width:122px; padding: .5em 1em;}
+	.fixedChat .inner button { width:92%; }
+	.fixedChat .inner ul li > img { width:150px; margin: 6px 0 0 .5em; }
+	.fixedChat .inner ul li .callNumber { font-size:21px; }
+	.fixedChat .inner ul li:nth-child(2) { padding:1em; }
+	.fixedChat .inner ul li:nth-child(2) .orderTit img { width:180px; }
+	.fixedChat .inner ul li dl dt img { width:29px; }
+	.fixedChat .inner ul li:nth-child(2) .orderTit { margin-bottom:10px; }
+	.fixedChat .inner ul li:nth-child(2) .orderTit .checks { margin:3px 0 0 0; }
+}

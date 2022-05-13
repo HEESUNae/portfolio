@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61" height="57.127" viewBox="0 0 61 57.127">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_65" data-name="사각형 65" width="61" height="57.127" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_31" data-name="그룹 31" transform="translate(0 0)">
+    <g id="그룹_30" data-name="그룹 30" clip-path="url(#clip-path)">
+      <path id="패스_78" data-name="패스 78" d="M61,37.127a20,20,0,1,1-20-20,20,20,0,0,1,20,20" fill="#259561"/>
+      <path id="패스_79" data-name="패스 79" d="M26,1.127l-25,13v28l25,13,25-13v-28Z" fill="#fff"/>
+      <path id="패스_80" data-name="패스 80" d="M26,1.127l-25,13v28l25,13,25-13v-28Z" fill="none" stroke="#383a3a" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="선_76" data-name="선 76" x2="25" y2="13" transform="translate(1 14.127)" fill="none" stroke="#383a3a" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="패스_81" data-name="패스 81" d="M26,55.127v-28l25-13" fill="none" stroke="#383a3a" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="패스_82" data-name="패스 82" d="M10.5,19.065l25-13,6,3.125-25,13Z" fill="#9df4ef"/>
+      <path id="패스_83" data-name="패스 83" d="M10.5,19.065l25-13,6,3.125-25,13Z" fill="none" stroke="#383a3a" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="패스_84" data-name="패스 84" d="M10.5,24.065v-5l6,3.125v5Z" fill="#9df4ef"/>
+      <path id="패스_85" data-name="패스 85" d="M10.5,24.065v-5l6,3.125v5Z" fill="none" stroke="#383a3a" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

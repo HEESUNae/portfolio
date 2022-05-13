@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lotto Made System</title>
+    
+    <link href="./_css/common.css" rel="styleSheet" type="text/css" />
+    <link href="./_css/style.css" rel="styleSheet" type="text/css" />
+    <link href="./_css/swiper.css" rel="styleSheet" type="text/css" />
+    <script src="./_js/jquery-1.8.1.min.js"></script>
+    <script src="./_js/swiper.min.js"></script>
+    <script defer src="./_js/common.js"></script>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <div class="inner">
+            <div class="logo"><a href="./index.html"><img src="_img/mainLogo.png" alt="로또메이드"></a></div>
+            <div class="gnb">
+                <ul>
+                    <li><a href="./system.html">메이드 분석시스템</a></li>
+                    <li><a href="./membership.html">메이드 멤버십</a></li>
+                    <li><a href="#">분석자료</a></li>
+                    <li><a href="#">나의조합</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="utill">
+                <div class="btn btn--red"><a href="#">로그인</a></div>
+                <div class="btn btn--black"> <a href="#">회원가입</a></div>
+            </div>
+        </div>
+         <!-- LNB -->
+        <div class="lnb">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>메이드 분석시스템</dt>
+                            <dd><a href="./system.html">분석시스템 소개</a></dd>
+                            <dd><a href="./system.html">분석시스템 알고리즘 및 이론</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>메이드 멤버십</dt>
+                            <dd><a href="./membership.html">메이드</a></dd>
+                            <dd><a href="./membership.html">메이드 B</a></dd>
+                            <dd><a href="./membership.html">메이드 플러스</a></dd>
+                            <dd><a href="./membership.html">메이드 트러플</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>분석자료</dt>
+                            <dd><a href="#">당첨조합패턴</a></dd>
+                            <dd><a href="#">당첨번호구간</a></dd>
+                            <dd><a href="#">번호배출순위</a></dd>
+                            <dd><a href="#">홀/짝 통계</a></dd>
+                            <dd><a href="#">연번 통계</a></dd>
+                            <dd><a href="#">고/저 통계</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>나의조합</dt>
+                            <dd><a href="#">조합확인</a></dd>
+                            <dd><a href="#">결제내역</a></dd>
+                            <dd><a href="#">문자전송내역</a></dd>
+                            <dd><a href="#">조합수 수정</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>고객센터</dt>
+                            <dd><a href="#">공지사항</a></dd>
+                            <dd><a href="#">자주묻는질문</a></dd>
+                            <dd><a href="#">1:1문의</a></dd>
+                            <dd><a href="#">스팸처리</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="contents">
+        <!-- SYSTEM BENNER -->
+        <div class="sub-benner">
+            <div class="title">
+                <h2>로또메이드 <span>분석시스템</span></h2>
+                <p>LOTTO MADE ANALYSIS SYSTEM</p>
+            </div>
+            <div class="tab">
+                <div class="inner">
+                    <ul>
+                        <li class="sub-tab01 active" onclick="subTab('01')"><a href="#">분석시스템 소개</a></li>
+                        <li class="sub-tab02" onclick="subTab('02')"><a href="#">분석시스템 알고리즘 이론</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- SYSTEM CONTENTS -->
+        <div class="system-cont" id="system-cont01">
+            <div class="inner">
+                <div class="system-info">
+                    <h2><span>세븐시스템</span> 탑재</h2>
+                    <p>
+                        로또메이드는 단지 흥미와 재미로 시작하였으나 많은 연구와 노력이 필요하다는 인식을 가지게 되었고 자기개발과 끊임없는 연구로 고객의 삶의 질 향상에 기여할 수 있는<br />
+                        솔루션과 합리적인 방식으로 폭넓은 서비스를 제공함으로써 끊임없이 노력하고 발전하는 회사로 거듭날 것을 약속드리며 모든 분들의 건승을 기원합니다. 감사합니다.
+                    </p>
+                </div>
+                <ul class="system-four">
+                    <li>
+                        <img src="./_img/fourIco01.png" alt="메이드 시스템 아이콘">
+                        <h3>메이드 시스템</h3>
+                        <p>메이드 시스템이란 고정수 이월수<br /> 제외수를 종합하여 시뮬레이션값을<br /> 통한 예상수를 산출해냅니다 </p>
+                    </li>
+                    <li>
+                        <img src="./_img/fourIco02.png" alt="고정수 산출시스템 아이콘">
+                        <h3>고정수 산출 시스템</h3>
+                        <p>지난 10회차 이내 비출현빈도와<br /> 최근 6개월 이내 다출현빈도 자료를<br /> 이용하여 고정수 1개~3개번호를<br /> 고정합니다 </p>
+                    </li>
+                    <li>
+                        <img src="./_img/fourIco03.png" alt="이월수 산출시스템 아이콘">
+                        <h3>이월수 산출 시스템</h3>
+                        <p>로또 당첨번호는 지금껏 당첨되지<br /> 않은 번호들이 가장 유력하기도<br /> 하지만 지금까지 출현된 당첨번호들도<br /> 당첨번호가 될 수 있는 확률을<br /> 가지고 있습니다 </p>
+                    </li>
+                    <li>
+                        <img src="./_img/fourIco04.png" alt="제외수 산출시스템 아이콘">
+                        <h3>제외수 산출 시스템</h3>
+                        <p>지난 10회차 이내 비출현빈도와<br /> 최근 6개월이내 다출현빈도의 자료를<br /> 이용하여 제외수와 예상수를 나눕니다</p>
+                    </li>
+                </ul>
+                <div class="system-step">
+                    <div class="title">
+                        <h3>더욱 강력해진 메이드 로또 번호 추출 시스템!</h3>
+                        <h2>로또메이드 <span>세븐시스템</span>으로 더욱 빠른 고액 당첨 확률!</h2>
+                    </div>
+                    <ul class="system-box">
+                        <li>
+                            <div class="step-number">STEP 01</div>
+                            <P>과거부터 최근까지의 로또 당첨 번호 자동 수집</P>
+                        </li>
+                        <li>
+                            <div class="step-number">STEP 02</div>
+                            <P>과거 당첨번호 데이터를 학습하여 당첨 엔진 구성</P>
+                        </li>
+                        <li>
+                            <div class="step-number">STEP 03</div>
+                            <P>당첨 엔진을 통해 당첨번호 예측</P>
+                        </li>
+                    </ul>
+                    <div class="system-acticle">
+                        <p>
+                            위 3단계가 매주 로또번호 추첨 시 데이터가 추가되어 매주 자동으로 학습을 진행하여 로또 당첨번호를 예측하고 번호를 추출합니다.<br />
+                            메이드 세븐볼시스템은 로또 당첨번호 예측을 위해 순환 신경망(RNN) 인공지능 알고리즘 중의 하나인 LSTM을 사용
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="system-cont" id="system-cont02" style="display: none;">
+            <div class="inner">
+                <img src="./_img/system-cont-bg2.png" alt="시스템 알고리즘 사진">
+                <h2><span>세븐시스템</span> 알고리즘 및 이론</h2>
+                <p>
+                    시계열 데이터(time series data)란 일정 시간 간격으로 배치된 같은 형태 데이터들의 열(sequence)을 말한다. <br />
+                    시계열 해석(time series analysis)은 이런 시계열 데이터들이 어떤 법칙에서 생성되어 나오는지를 파악하는 수학 분야다. <br />
+                    같은 형식의 데이터들이 차례로 나타나는 시계열 데이터에서는 시간대를 넘나드는 다양한 패턴이 숨어있게 마련이다. <br />
+                    이러한 패턴 가운데는 가까운 인접 시간대 사이에서 형성되는 패턴도 있지만 멀리 떨어져 있는 시간대 사이에 나타나는 패턴도 있다. <br />
+                    다양한 종류의 시계열 데이터에 대해 그 내용을 분석해서 이해하고, 그 분석을 바탕으로 데이터의 특성과 패턴을 찾아 활용하기란 쉬운 일이 아니다. <br />
+                    이러한 문제를 해결하기 위해 딥러닝의 순환 신경망(RNN, Recurrent Neural Network)을 적합한 알고리즘으로 사용<br /><br />
+                    딥러닝 알고리즘 중 순환 신경망(RNN)의 특징에 따라 과거 당첨번호를 학습하여, 딥러닝이 패턴을 발견하고, 해당 패턴을 기반으로 이후의 로또 당첨 번호를 예측하는 것이  <br />
+                    핵심 알고리즘 시계열 해석을 위해, 본 개발에서 사용하는 딥러닝 알고리즘은 순환신경망(RNN, Recurrent Neural Network) RNN은  <br />
+                    다층 퍼셉트론 신경망의 은닉 계층 가운데 일부를 순환 계층(Recurrent Layer)으로 대체하여 만든 신경망이다. <br /><br />
+                    순환 계층은 시계열 데이터를 시간대별로 반복 처리하면서 어떤 시간대에 자신이 출력한 내용을 다음 시간대에 다시 입력의 일부로 활용한다.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="inner">
+            <div class="logo"><img src="./_img/mainLogo.png" alt="하단 로고"></div>
+            <div class="footer-info">
+                <ul>
+                    <li><a href="#">서비스 이용약관</a></li>
+                    <li><a href="#">개인정보 취급방침</a></li>
+                </ul>
+                <p>사업자번호 : 682-21-01427</p>
+                <p>통신판매업 : 제2020-안양동안-1441호</p>
+                <p>개인정보책임관리자 : 김복기</p>
+                <p>주소 : 경기도 안양시 엘에스로 37, 10층 1006호</p>
+                <p class="copyright">COPYRIGHT ⓒ BY LOTTO ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="footer-bank">
+                <p>로또메이드 계좌번호</p>
+                <p>
+                    <span class="material-icons">savings</span>
+                    기업은행 331-026920-01-012 (더메이드)
+                </p>
+            </div>
+            <div class="footer-call">
+                <p>로또메이드 고객센터</p>
+                <h2>
+                    <span class="material-icons">settings_phone</span>
+                    070-8855-0090
+                </h2>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

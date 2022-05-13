@@ -1,0 +1,18 @@
+<svg id="햄버거메뉴" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45.065" height="35.999" viewBox="0 0 45.065 35.999">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="45.065" height="35.999" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="반복_그리드_5" data-name="반복 그리드 5" clip-path="url(#clip-path)">
+    <g transform="translate(-1836.467 -80)">
+      <line id="선_39" data-name="선 39" x2="45.533" transform="translate(1836.5 82.5)" fill="none" stroke="#fff" stroke-width="3"/>
+    </g>
+    <g transform="translate(-1836.467 -66)">
+      <line id="선_39-2" data-name="선 39" x2="45.533" transform="translate(1836.5 82.5)" fill="none" stroke="#fff" stroke-width="3"/>
+    </g>
+    <g transform="translate(-1836.467 -52)">
+      <line id="선_39-3" data-name="선 39" x2="45.533" transform="translate(1836.5 82.5)" fill="none" stroke="#fff" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
