@@ -19,7 +19,7 @@ header { position:fixed; top:0; left:0; z-index:999; color: #fff; width: 100%; b
 body.scroll header { background:rgba(0,0,0,0.5); }
 header .inner { display: flex; align-items: center; justify-content: space-between; padding: 30px 0;}
 header .toplogo a { color: #fff; }
-header .toplogo h1 { font-family: 'BRBA_B'; font-size: 45px; font-weight: 400; display: flex; align-items: center;}
+header .toplogo h1 { font-family: 'BRBA_B'; font-size: 40px; font-weight: 400; display: flex; align-items: center;}
 header .toplogo h1 span { font-family: 'BRBA_B'; font-size: 15px; margin-left: 10px; }
 header nav ul { display: flex; }
 header nav ul li { padding: 0 0 0 40px; cursor: pointer; font-size:18px; font-weight: 500; }
