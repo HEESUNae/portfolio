@@ -9,7 +9,7 @@ var loadTyping = function() {
 }
 loadTyping();
 
-//사람
+//people
 gsap.timeline({
     scrollTrigger: {
       trigger:".sec01",
@@ -27,33 +27,31 @@ gsap.timeline({
 });
 
 
+
 var max = document.querySelectorAll(".sec02 .port_box li").length;
 var portLiWidth = document.querySelector('.sec02 .port_box li').offsetWidth;
 var wrapperWidth = portLiWidth * max; //래퍼 길이
-var loadView = 4;
+//var loadView = 4;
 var index = 0;
 
 document.querySelector('.sec02 .port_box ul').style.width = wrapperWidth + "px";
 
-//마우스 휠 이벤트
-document.addEventListener("wheel" , (e) => {
-    if(document.querySelector('.sec02').classList.contains("active")){
-        if (e.deltaY > 0){
-            if(index < (max - loadView)){
-                index ++;
-                var shift = portLiWidth * index;
-                 document.querySelector('.sec02 .port_box ul').style.transform = "translateX(-"+shift+"px)";
-              }
-        } else {
-            if(index  > 0){
-                index --;
-                var shift = portLiWidth * index;
-                document.querySelector('.sec02 .port_box ul').style.transform = "translateX(-"+shift+"px)";
-            }
-        }
-    }
+if(document.querySelector('body').offsetWidth < 1200){
+    var loadView = 3;
+}else {
+    var loadView = 4;
+}
 
+document.addEventListener("resize", () =>{
+    if(document.querySelector('body').offsetWidth < 1200){
+        var loadView = 3;
+        console.log(loadView)
+    }else {
+        var loadView = 4;
+        console.log(loadView)
+    }
 });
+window.onresize = function(){ document.location.reload(); };
 
 
 //sec02  롤링
@@ -70,19 +68,45 @@ var sec02 = gsap.timeline({
 sec02.to({},{duration:1});
 
 
-//핀
-var target = document.querySelectorAll('section');
-for(var i=0; i<2; i++){
-gsap.timeline({
-    scrollTrigger: {
-      trigger: target[i],
-      pin: true,
-      start: "top top",
-      end: "bottom",
-      scrub: 0.3,
+if(document.querySelector('body').offsetWidth > 992){
+    //mouse wheel
+    document.addEventListener("wheel" , (e) => {
+        if(document.querySelector('.sec02').classList.contains("active")){
+            if (e.deltaY > 0){
+                if(index < (max - loadView)){
+                    index ++;
+                    var shift = portLiWidth * index;
+                     document.querySelector('.sec02 .port_box ul').style.transform = "translateX(-"+shift+"px)";
+                  }
+            } else {
+                if(index  > 0){
+                    index --;
+                    var shift = portLiWidth * index;
+                    document.querySelector('.sec02 .port_box ul').style.transform = "translateX(-"+shift+"px)";
+                }
+            }
+        }
+
+    });
+
+    //pin
+    var target = document.querySelectorAll('section');
+    for(var i=0; i<2; i++){
+    gsap.timeline({
+        scrollTrigger: {
+          trigger: target[i],
+          pin: true,
+          start: "top top",
+          end: "bottom",
+          scrub: 0.3,
+        }
+      });
     }
-  });
 }
+
+
+
+
 
 
 particlesJS("particles-js", {
